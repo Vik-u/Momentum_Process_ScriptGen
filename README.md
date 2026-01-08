@@ -1,6 +1,6 @@
 # Momentum DB Step Catalog
 
-This folder contains the Momentum DB exports (`Momentum_db1.txt`, `Momentum_db2.txt`) plus a small utility to derive a deterministic catalog of everything you need to build workflows (devices, pools, variables, and per-step requirements).
+This folder contains the Momentum DB exports (`data/raw/Momentum_db1.txt`, `data/raw/Momentum_db2.txt`) plus utilities to derive a deterministic catalog of everything you need to build workflows (devices, pools, variables, and per-step requirements).
 
 ## Files
 - `generate_step_catalog.py` — parser that reads one or more Momentum DB text files and emits a consolidated catalog.
@@ -9,9 +9,9 @@ This folder contains the Momentum DB exports (`Momentum_db1.txt`, `Momentum_db2.
 - `streamlit_app.py` — interactive UI to pick steps, override parameters, and download a Momentum-ready process file.
 - `deterministic_agent.py` — CLI “agent” to list devices/ops, describe steps, and build process files (catalog-backed).
 - `generate_docs.py` — produces static Markdown docs of all steps/params/containers from the catalog.
-- `inventory_containers.yaml` — source list of known containers (referenced in many steps).
-- `step_catalog.json` — generated output: finite lists of devices, pools, variables, and every unique step with its required parameters and container expectations.
-- `catalog_parts/` — split outputs for direct consumption (per-topic and per-device JSON).
+- `data/raw/` — source DB exports and `inventory_containers.yaml`.
+- `data/generated/step_catalog.json` — generated output: finite lists of devices, pools, variables, and every unique step with its required parameters and container expectations.
+- `data/generated/catalog_parts/` — split outputs for direct consumption (per-topic and per-device JSON).
 
 ## What the catalog contains
 - `inventory_containers`: canonical container names from `inventory_containers.yaml`.
@@ -29,10 +29,10 @@ Use this to drive a deterministic form-like UI: user selects a step, and the cat
 From this directory:
 ```bash
 python generate_step_catalog.py \
-  --inputs Momentum_db1.txt Momentum_db2.txt \
-  --inventory inventory_containers.yaml \
-  --output step_catalog.json \
-  --split-dir catalog_parts
+  --inputs data/raw/Momentum_db1.txt data/raw/Momentum_db2.txt \
+  --inventory data/raw/inventory_containers.yaml \
+  --output data/generated/step_catalog.json \
+  --split-dir data/generated/catalog_parts
 ```
 
 Arguments (all optional; defaults shown):
@@ -46,7 +46,7 @@ Use the catalog to print the exact parameters and container requirements for sel
 ```bash
 # Example: two operations
 python generate_process_snippet.py \
-  --catalog step_catalog.json \
+  --catalog data/generated/step_catalog.json \
   --operations "B_XPeel:Remove Seal,A_Combi_Shelf:Dispense"
 ```
 
@@ -66,8 +66,8 @@ This acts as a checklist: every `<REQUIRED>` must be supplied; container type/li
 Keeps devices/variables/pools from a base file and replaces only the process steps.
 ```bash
 python generate_process_file.py \
-  --base Momentum_db1.txt \
-  --catalog step_catalog.json \
+  --base data/raw/Momentum_db2.txt \
+  --catalog data/generated/step_catalog.json \
   --process-name My_New_Process \
   --steps "B_XPeel:Remove Seal;AdhereTime=3.0|A_Combi_Shelf:Dispense;DispenseVolume=50" \
   --output generated_process.txt
@@ -82,7 +82,7 @@ Notes:
 import json
 from pathlib import Path
 
-catalog = json.loads(Path("step_catalog.json").read_text())
+catalog = json.loads(Path("data/generated/step_catalog.json").read_text())
 
 # List all operations available on B_XPeel
 ops = catalog["steps"]["B_XPeel"].keys()
@@ -99,14 +99,14 @@ If you prefer split files, load from `catalog_parts/`:
 from pathlib import Path
 import json
 
-steps_by_device = json.loads(Path("catalog_parts/steps.json").read_text())
+steps_by_device = json.loads(Path("data/generated/catalog_parts/steps.json").read_text())
 b_xpeel_ops = steps_by_device["B_XPeel"]
 ```
 
 ## Interactive UI (Streamlit)
 Launch a small UI to assemble a process file:
 ```bash
-cd viku/PlayGround/Momentum_db
+cd viku/PlayGround/Momentum_Process_ScriptGen
 streamlit run streamlit_app.py
 ```
 What it does:
@@ -127,7 +127,7 @@ python deterministic_agent.py describe-step --device B_XPeel --op "Remove Seal"
 
 # build a process file
 python deterministic_agent.py build-process \
-  --base Momentum_db2.txt \
+  --base data/raw/Momentum_db2.txt \
   --process-name My_Process \
   --steps "B_XPeel:Remove Seal;AdhereTime=2.5|A_Combi_Shelf:Dispense;DispenseVolume=50;PlateType=96 standard (15mm);PrimeEnabled=No" \
   --output my_process.txt
@@ -138,7 +138,7 @@ python deterministic_agent.py build-process \
 ## Static docs
 Generate Markdown docs for all steps/params/containers:
 ```bash
-python generate_docs.py --catalog step_catalog.json --output docs/step_reference.md
+python generate_docs.py --catalog data/generated/step_catalog.json --output docs/step_reference.md
 ```
 ## Future extension ideas
 - Add simple type/default hints per parameter based on device docs.

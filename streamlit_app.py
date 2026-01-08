@@ -17,9 +17,9 @@ from typing import Dict, List, Tuple
 import streamlit as st
 
 
-CATALOG_PATH = Path("step_catalog.json")
-BASE_OPTIONS_ALL = sorted([p.name for p in Path(".").glob("*.txt") if p.name.startswith("Momentum_db")])
-DEFAULT_BASE = "Momentum_db2.txt" if "Momentum_db2.txt" in BASE_OPTIONS_ALL else (BASE_OPTIONS_ALL[0] if BASE_OPTIONS_ALL else "")
+CATALOG_PATH = Path("data/generated/step_catalog.json")
+BASE_OPTIONS_ALL = sorted([str(p) for p in Path("data/raw").glob("Momentum_db*.txt")])
+DEFAULT_BASE = "data/raw/Momentum_db2.txt" if Path("data/raw/Momentum_db2.txt").exists() else (BASE_OPTIONS_ALL[0] if BASE_OPTIONS_ALL else "")
 
 
 def load_catalog(path: Path) -> Dict:

@@ -334,22 +334,22 @@ def main() -> None:
     parser.add_argument(
         "--inputs",
         nargs="+",
-        default=["Momentum_db1.txt", "Momentum_db2.txt"],
+        default=["data/raw/Momentum_db1.txt", "data/raw/Momentum_db2.txt"],
         help="Momentum DB text files to parse.",
     )
     parser.add_argument(
         "--inventory",
-        default="inventory_containers.yaml",
+        default="data/raw/inventory_containers.yaml",
         help="Path to inventory_containers.yaml.",
     )
     parser.add_argument(
         "--output",
-        default="step_catalog.json",
+        default="data/generated/step_catalog.json",
         help="Where to write the consolidated catalog.",
     )
     parser.add_argument(
         "--split-dir",
-        default=None,
+        default="data/generated/catalog_parts",
         help="Optional directory to also write split artifacts (devices, pools, variables, steps, containers).",
     )
     args = parser.parse_args()

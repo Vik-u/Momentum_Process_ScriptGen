@@ -68,7 +68,7 @@ def generate_md(catalog: Dict) -> str:
 
 def main():
     parser = argparse.ArgumentParser(description="Generate Markdown docs from catalog.")
-    parser.add_argument("--catalog", default="step_catalog.json")
+    parser.add_argument("--catalog", default="data/generated/step_catalog.json")
     parser.add_argument("--output", default="docs/step_reference.md")
     args = parser.parse_args()
 

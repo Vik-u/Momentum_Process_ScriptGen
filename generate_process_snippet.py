@@ -56,7 +56,7 @@ def main() -> None:
     )
     parser.add_argument(
         "--catalog",
-        default="step_catalog.json",
+        default="data/generated/step_catalog.json",
         help="Path to the consolidated catalog JSON.",
     )
     parser.add_argument(

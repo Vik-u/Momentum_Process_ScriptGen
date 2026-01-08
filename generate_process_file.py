@@ -169,8 +169,8 @@ def main() -> None:
     parser = argparse.ArgumentParser(
         description="Generate a Momentum process text file from a template header and selected steps."
     )
-    parser.add_argument("--base", default="Momentum_db2.txt", help="Base DB file to copy header from.")
-    parser.add_argument("--catalog", default="step_catalog.json", help="Catalog JSON with steps metadata.")
+    parser.add_argument("--base", default="data/raw/Momentum_db2.txt", help="Base DB file to copy header from.")
+    parser.add_argument("--catalog", default="data/generated/step_catalog.json", help="Catalog JSON with steps metadata.")
     parser.add_argument("--process-name", default="Generated_Process", help="Name for the process block.")
     parser.add_argument(
         "--steps",

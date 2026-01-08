@@ -18,7 +18,7 @@ import sys
 from pathlib import Path
 from typing import Dict, List, Tuple
 
-DEFAULT_CATALOG = Path("step_catalog.json")
+DEFAULT_CATALOG = Path("data/generated/step_catalog.json")
 
 
 def load_catalog(path: Path) -> Dict:
@@ -237,7 +237,7 @@ def main():
     p3.set_defaults(func=cmd_describe_step)
 
     p4 = sub.add_parser("build-process", help="Build a Momentum process file")
-    p4.add_argument("--base", default="Momentum_db2.txt", help="Base DB file (header source)")
+    p4.add_argument("--base", default="data/raw/Momentum_db2.txt", help="Base DB file (header source)")
     p4.add_argument("--process-name", default="Generated_Process")
     p4.add_argument(
         "--steps",

@@ -17,8 +17,8 @@ from typing import Dict, List, Tuple
 import gradio as gr
 
 
-CATALOG_PATH = Path("step_catalog.json")
-BASE_OPTIONS = ["Momentum_db2.txt", "Momentum_db1.txt"]
+CATALOG_PATH = Path("data/generated/step_catalog.json")
+BASE_OPTIONS = ["data/raw/Momentum_db2.txt", "data/raw/Momentum_db1.txt"]
 
 
 def load_catalog(path: Path) -> Dict:
