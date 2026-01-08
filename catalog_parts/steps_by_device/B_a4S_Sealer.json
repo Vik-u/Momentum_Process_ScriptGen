@@ -1,0 +1,469 @@
+{
+  "B_a4S_Sealer": {
+    "Cool Down": {
+      "parameters": [
+        "ReserveForIteration",
+        "RunOnAbortedIteration",
+        "Duration",
+        "MinDelay",
+        "MaxDelaySpecified",
+        "RequestedMaxDelay",
+        "SpoilIfMaxDelayExceeded",
+        "Enabled",
+        "SkipOnError"
+      ],
+      "containers": [],
+      "parameters_meta": {
+        "Duration": {
+          "type": "time",
+          "default": "00:00:01",
+          "observed_values": [
+            "00:00:01"
+          ],
+          "min": "00:00:01",
+          "max": "00:00:01"
+        },
+        "Enabled": {
+          "type": "boolean",
+          "default": "Yes",
+          "observed_values": [
+            "Yes"
+          ]
+        },
+        "MaxDelaySpecified": {
+          "type": "boolean",
+          "default": "No",
+          "observed_values": [
+            "No"
+          ]
+        },
+        "MinDelay": {
+          "type": "time",
+          "default": "00:00:00",
+          "observed_values": [
+            "00:00:00"
+          ],
+          "min": "00:00:00",
+          "max": "00:00:00"
+        },
+        "RequestedMaxDelay": {
+          "type": "time",
+          "default": "00:00:00",
+          "observed_values": [
+            "00:00:00"
+          ],
+          "min": "00:00:00",
+          "max": "00:00:00"
+        },
+        "ReserveForIteration": {
+          "type": "string",
+          "default": "As Is",
+          "observed_values": [
+            "As Is"
+          ]
+        },
+        "RunOnAbortedIteration": {
+          "type": "boolean",
+          "default": "No",
+          "observed_values": [
+            "No"
+          ]
+        },
+        "SkipOnError": {
+          "type": "boolean",
+          "default": "No",
+          "observed_values": [
+            "No"
+          ]
+        },
+        "SpoilIfMaxDelayExceeded": {
+          "type": "boolean",
+          "default": "No",
+          "observed_values": [
+            "No"
+          ]
+        }
+      }
+    },
+    "Heat Up": {
+      "parameters": [
+        "Temperature",
+        "ReserveForIteration",
+        "RunOnAbortedIteration",
+        "Duration",
+        "MinDelay",
+        "MaxDelaySpecified",
+        "RequestedMaxDelay",
+        "SpoilIfMaxDelayExceeded",
+        "Enabled",
+        "SkipOnError"
+      ],
+      "containers": [],
+      "parameters_meta": {
+        "Duration": {
+          "type": "time",
+          "default": "00:00:01",
+          "observed_values": [
+            "00:00:01"
+          ],
+          "min": "00:00:01",
+          "max": "00:00:01"
+        },
+        "Enabled": {
+          "type": "boolean",
+          "default": "Yes",
+          "observed_values": [
+            "Yes"
+          ]
+        },
+        "MaxDelaySpecified": {
+          "type": "boolean",
+          "default": "No",
+          "observed_values": [
+            "No"
+          ]
+        },
+        "MinDelay": {
+          "type": "time",
+          "default": "00:00:00",
+          "observed_values": [
+            "00:00:00"
+          ],
+          "min": "00:00:00",
+          "max": "00:00:00"
+        },
+        "RequestedMaxDelay": {
+          "type": "time",
+          "default": "00:00:00",
+          "observed_values": [
+            "00:00:00"
+          ],
+          "min": "00:00:00",
+          "max": "00:00:00"
+        },
+        "ReserveForIteration": {
+          "type": "string",
+          "default": "As Is",
+          "observed_values": [
+            "As Is"
+          ]
+        },
+        "RunOnAbortedIteration": {
+          "type": "boolean",
+          "default": "No",
+          "observed_values": [
+            "No"
+          ]
+        },
+        "SkipOnError": {
+          "type": "boolean",
+          "default": "No",
+          "observed_values": [
+            "No"
+          ]
+        },
+        "SpoilIfMaxDelayExceeded": {
+          "type": "boolean",
+          "default": "No",
+          "observed_values": [
+            "No"
+          ]
+        },
+        "Temperature": {
+          "type": "number",
+          "default": "170",
+          "observed_values": [
+            "170"
+          ],
+          "min": "170",
+          "max": "170"
+        }
+      }
+    },
+    "Incubate": {
+      "parameters": [
+        "ReserveForIteration",
+        "RunOnAbortedIteration",
+        "Duration",
+        "MinDelay",
+        "MaxDelaySpecified",
+        "RequestedMaxDelay",
+        "SpoilIfMaxDelayExceeded",
+        "Enabled",
+        "SkipOnError"
+      ],
+      "containers": [],
+      "parameters_meta": {
+        "Duration": {
+          "type": "time",
+          "default": "00:00:01",
+          "observed_values": [
+            "00:00:01"
+          ],
+          "min": "00:00:01",
+          "max": "00:00:01"
+        },
+        "Enabled": {
+          "type": "boolean",
+          "default": "Yes",
+          "observed_values": [
+            "Yes"
+          ]
+        },
+        "MaxDelaySpecified": {
+          "type": "boolean",
+          "default": "No",
+          "observed_values": [
+            "No"
+          ]
+        },
+        "MinDelay": {
+          "type": "time",
+          "default": "00:00:00",
+          "observed_values": [
+            "00:00:00"
+          ],
+          "min": "00:00:00",
+          "max": "00:00:00"
+        },
+        "RequestedMaxDelay": {
+          "type": "time",
+          "default": "00:00:00",
+          "observed_values": [
+            "00:00:00"
+          ],
+          "min": "00:00:00",
+          "max": "00:00:00"
+        },
+        "ReserveForIteration": {
+          "type": "string",
+          "default": "As Is",
+          "observed_values": [
+            "As Is"
+          ]
+        },
+        "RunOnAbortedIteration": {
+          "type": "boolean",
+          "default": "No",
+          "observed_values": [
+            "No"
+          ]
+        },
+        "SkipOnError": {
+          "type": "boolean",
+          "default": "No",
+          "observed_values": [
+            "No"
+          ]
+        },
+        "SpoilIfMaxDelayExceeded": {
+          "type": "boolean",
+          "default": "No",
+          "observed_values": [
+            "No"
+          ]
+        }
+      }
+    },
+    "Load": {
+      "parameters": [
+        "ReserveForIteration",
+        "RunOnAbortedIteration",
+        "Duration",
+        "MinDelay",
+        "MaxDelaySpecified",
+        "RequestedMaxDelay",
+        "SpoilIfMaxDelayExceeded",
+        "Enabled",
+        "SkipOnError"
+      ],
+      "containers": [],
+      "parameters_meta": {
+        "Duration": {
+          "type": "time",
+          "default": "00:00:01",
+          "observed_values": [
+            "00:00:01"
+          ],
+          "min": "00:00:01",
+          "max": "00:00:01"
+        },
+        "Enabled": {
+          "type": "boolean",
+          "default": "Yes",
+          "observed_values": [
+            "Yes"
+          ]
+        },
+        "MaxDelaySpecified": {
+          "type": "boolean",
+          "default": "No",
+          "observed_values": [
+            "No"
+          ]
+        },
+        "MinDelay": {
+          "type": "time",
+          "default": "00:00:00",
+          "observed_values": [
+            "00:00:00"
+          ],
+          "min": "00:00:00",
+          "max": "00:00:00"
+        },
+        "RequestedMaxDelay": {
+          "type": "time",
+          "default": "00:00:00",
+          "observed_values": [
+            "00:00:00"
+          ],
+          "min": "00:00:00",
+          "max": "00:00:00"
+        },
+        "ReserveForIteration": {
+          "type": "string",
+          "default": "As Is",
+          "observed_values": [
+            "As Is"
+          ]
+        },
+        "RunOnAbortedIteration": {
+          "type": "boolean",
+          "default": "No",
+          "observed_values": [
+            "No"
+          ]
+        },
+        "SkipOnError": {
+          "type": "boolean",
+          "default": "No",
+          "observed_values": [
+            "No"
+          ]
+        },
+        "SpoilIfMaxDelayExceeded": {
+          "type": "boolean",
+          "default": "No",
+          "observed_values": [
+            "No"
+          ]
+        }
+      }
+    },
+    "Seal": {
+      "parameters": [
+        "SealingTemperature",
+        "SealingTime",
+        "SealHeight",
+        "ReserveForIteration",
+        "RunOnAbortedIteration",
+        "Duration",
+        "MinDelay",
+        "MaxDelaySpecified",
+        "RequestedMaxDelay",
+        "SpoilIfMaxDelayExceeded",
+        "Enabled",
+        "SkipOnError"
+      ],
+      "containers": [],
+      "parameters_meta": {
+        "Duration": {
+          "type": "time",
+          "default": "00:00:02",
+          "observed_values": [
+            "00:00:02"
+          ],
+          "min": "00:00:02",
+          "max": "00:00:02"
+        },
+        "Enabled": {
+          "type": "boolean",
+          "default": "Yes",
+          "observed_values": [
+            "Yes"
+          ]
+        },
+        "MaxDelaySpecified": {
+          "type": "boolean",
+          "default": "No",
+          "observed_values": [
+            "No"
+          ]
+        },
+        "MinDelay": {
+          "type": "time",
+          "default": "00:00:00",
+          "observed_values": [
+            "00:00:00"
+          ],
+          "min": "00:00:00",
+          "max": "00:00:00"
+        },
+        "RequestedMaxDelay": {
+          "type": "time",
+          "default": "00:00:00",
+          "observed_values": [
+            "00:00:00"
+          ],
+          "min": "00:00:00",
+          "max": "00:00:00"
+        },
+        "ReserveForIteration": {
+          "type": "string",
+          "default": "As Is",
+          "observed_values": [
+            "As Is"
+          ]
+        },
+        "RunOnAbortedIteration": {
+          "type": "boolean",
+          "default": "No",
+          "observed_values": [
+            "No"
+          ]
+        },
+        "SealHeight": {
+          "type": "number",
+          "default": "0",
+          "observed_values": [
+            "0"
+          ],
+          "min": "0",
+          "max": "0"
+        },
+        "SealingTemperature": {
+          "type": "number",
+          "default": "170",
+          "observed_values": [
+            "170"
+          ],
+          "min": "170",
+          "max": "170"
+        },
+        "SealingTime": {
+          "type": "number",
+          "default": "2",
+          "observed_values": [
+            "2"
+          ],
+          "min": "2",
+          "max": "2"
+        },
+        "SkipOnError": {
+          "type": "boolean",
+          "default": "No",
+          "observed_values": [
+            "No"
+          ]
+        },
+        "SpoilIfMaxDelayExceeded": {
+          "type": "boolean",
+          "default": "No",
+          "observed_values": [
+            "No"
+          ]
+        }
+      }
+    }
+  }
+}

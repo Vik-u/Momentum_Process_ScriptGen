@@ -1,0 +1,1504 @@
+{
+  "A_Combi_Shelf": {
+    "Dispense": {
+      "parameters": [
+        "CassetteID",
+        "DispenseVolume",
+        "FirstCol",
+        "FirstRow",
+        "LastCol",
+        "LastRow",
+        "PlateType",
+        "DispenseOrder",
+        "Fluid",
+        "PrimeVolume",
+        "PrimeEnabled",
+        "PumpSpeed",
+        "DispenseHeight",
+        "DispenseXOffset",
+        "DispenseYOffset",
+        "DefaultToColumn1",
+        "Column_1",
+        "Column_2",
+        "Column_3",
+        "Column_4",
+        "Column_5",
+        "Column_6",
+        "Column_7",
+        "Column_8",
+        "Column_9",
+        "Column_10",
+        "Column_11",
+        "Column_12",
+        "Column_13",
+        "Column_14",
+        "Column_15",
+        "Column_16",
+        "Column_17",
+        "Column_18",
+        "Column_19",
+        "Column_20",
+        "Column_21",
+        "Column_22",
+        "Column_23",
+        "Column_24",
+        "Column_25",
+        "Column_26",
+        "Column_27",
+        "Column_28",
+        "Column_29",
+        "Column_30",
+        "Column_31",
+        "Column_32",
+        "Column_33",
+        "Column_34",
+        "Column_35",
+        "Column_36",
+        "Column_37",
+        "Column_38",
+        "Column_39",
+        "Column_40",
+        "Column_41",
+        "Column_42",
+        "Column_43",
+        "Column_44",
+        "Column_45",
+        "Column_46",
+        "Column_47",
+        "Column_48",
+        "ReserveForIteration",
+        "RunOnAbortedIteration",
+        "Duration",
+        "MinDelay",
+        "MaxDelaySpecified",
+        "RequestedMaxDelay",
+        "SpoilIfMaxDelayExceeded",
+        "Enabled",
+        "SkipOnError"
+      ],
+      "containers": [
+        {
+          "container": "I_PCR_96_Green",
+          "lid_state": null,
+          "location": "A_Combi_Shelf:Nest"
+        }
+      ],
+      "parameters_meta": {
+        "CassetteID": {
+          "type": "number",
+          "default": "0",
+          "observed_values": [
+            "0"
+          ],
+          "min": "0",
+          "max": "0"
+        },
+        "Column_1": {
+          "type": "number",
+          "default": "0",
+          "observed_values": [
+            "0"
+          ],
+          "min": "0",
+          "max": "0"
+        },
+        "Column_10": {
+          "type": "number",
+          "default": "0",
+          "observed_values": [
+            "0"
+          ],
+          "min": "0",
+          "max": "0"
+        },
+        "Column_11": {
+          "type": "number",
+          "default": "0",
+          "observed_values": [
+            "0"
+          ],
+          "min": "0",
+          "max": "0"
+        },
+        "Column_12": {
+          "type": "number",
+          "default": "0",
+          "observed_values": [
+            "0"
+          ],
+          "min": "0",
+          "max": "0"
+        },
+        "Column_13": {
+          "type": "number",
+          "default": "0",
+          "observed_values": [
+            "0"
+          ],
+          "min": "0",
+          "max": "0"
+        },
+        "Column_14": {
+          "type": "number",
+          "default": "0",
+          "observed_values": [
+            "0"
+          ],
+          "min": "0",
+          "max": "0"
+        },
+        "Column_15": {
+          "type": "number",
+          "default": "0",
+          "observed_values": [
+            "0"
+          ],
+          "min": "0",
+          "max": "0"
+        },
+        "Column_16": {
+          "type": "number",
+          "default": "0",
+          "observed_values": [
+            "0"
+          ],
+          "min": "0",
+          "max": "0"
+        },
+        "Column_17": {
+          "type": "number",
+          "default": "0",
+          "observed_values": [
+            "0"
+          ],
+          "min": "0",
+          "max": "0"
+        },
+        "Column_18": {
+          "type": "number",
+          "default": "0",
+          "observed_values": [
+            "0"
+          ],
+          "min": "0",
+          "max": "0"
+        },
+        "Column_19": {
+          "type": "number",
+          "default": "0",
+          "observed_values": [
+            "0"
+          ],
+          "min": "0",
+          "max": "0"
+        },
+        "Column_2": {
+          "type": "number",
+          "default": "0",
+          "observed_values": [
+            "0"
+          ],
+          "min": "0",
+          "max": "0"
+        },
+        "Column_20": {
+          "type": "number",
+          "default": "0",
+          "observed_values": [
+            "0"
+          ],
+          "min": "0",
+          "max": "0"
+        },
+        "Column_21": {
+          "type": "number",
+          "default": "0",
+          "observed_values": [
+            "0"
+          ],
+          "min": "0",
+          "max": "0"
+        },
+        "Column_22": {
+          "type": "number",
+          "default": "0",
+          "observed_values": [
+            "0"
+          ],
+          "min": "0",
+          "max": "0"
+        },
+        "Column_23": {
+          "type": "number",
+          "default": "0",
+          "observed_values": [
+            "0"
+          ],
+          "min": "0",
+          "max": "0"
+        },
+        "Column_24": {
+          "type": "number",
+          "default": "0",
+          "observed_values": [
+            "0"
+          ],
+          "min": "0",
+          "max": "0"
+        },
+        "Column_25": {
+          "type": "number",
+          "default": "0",
+          "observed_values": [
+            "0"
+          ],
+          "min": "0",
+          "max": "0"
+        },
+        "Column_26": {
+          "type": "number",
+          "default": "0",
+          "observed_values": [
+            "0"
+          ],
+          "min": "0",
+          "max": "0"
+        },
+        "Column_27": {
+          "type": "number",
+          "default": "0",
+          "observed_values": [
+            "0"
+          ],
+          "min": "0",
+          "max": "0"
+        },
+        "Column_28": {
+          "type": "number",
+          "default": "0",
+          "observed_values": [
+            "0"
+          ],
+          "min": "0",
+          "max": "0"
+        },
+        "Column_29": {
+          "type": "number",
+          "default": "0",
+          "observed_values": [
+            "0"
+          ],
+          "min": "0",
+          "max": "0"
+        },
+        "Column_3": {
+          "type": "number",
+          "default": "0",
+          "observed_values": [
+            "0"
+          ],
+          "min": "0",
+          "max": "0"
+        },
+        "Column_30": {
+          "type": "number",
+          "default": "0",
+          "observed_values": [
+            "0"
+          ],
+          "min": "0",
+          "max": "0"
+        },
+        "Column_31": {
+          "type": "number",
+          "default": "0",
+          "observed_values": [
+            "0"
+          ],
+          "min": "0",
+          "max": "0"
+        },
+        "Column_32": {
+          "type": "number",
+          "default": "0",
+          "observed_values": [
+            "0"
+          ],
+          "min": "0",
+          "max": "0"
+        },
+        "Column_33": {
+          "type": "number",
+          "default": "0",
+          "observed_values": [
+            "0"
+          ],
+          "min": "0",
+          "max": "0"
+        },
+        "Column_34": {
+          "type": "number",
+          "default": "0",
+          "observed_values": [
+            "0"
+          ],
+          "min": "0",
+          "max": "0"
+        },
+        "Column_35": {
+          "type": "number",
+          "default": "0",
+          "observed_values": [
+            "0"
+          ],
+          "min": "0",
+          "max": "0"
+        },
+        "Column_36": {
+          "type": "number",
+          "default": "0",
+          "observed_values": [
+            "0"
+          ],
+          "min": "0",
+          "max": "0"
+        },
+        "Column_37": {
+          "type": "number",
+          "default": "0",
+          "observed_values": [
+            "0"
+          ],
+          "min": "0",
+          "max": "0"
+        },
+        "Column_38": {
+          "type": "number",
+          "default": "0",
+          "observed_values": [
+            "0"
+          ],
+          "min": "0",
+          "max": "0"
+        },
+        "Column_39": {
+          "type": "number",
+          "default": "0",
+          "observed_values": [
+            "0"
+          ],
+          "min": "0",
+          "max": "0"
+        },
+        "Column_4": {
+          "type": "number",
+          "default": "0",
+          "observed_values": [
+            "0"
+          ],
+          "min": "0",
+          "max": "0"
+        },
+        "Column_40": {
+          "type": "number",
+          "default": "0",
+          "observed_values": [
+            "0"
+          ],
+          "min": "0",
+          "max": "0"
+        },
+        "Column_41": {
+          "type": "number",
+          "default": "0",
+          "observed_values": [
+            "0"
+          ],
+          "min": "0",
+          "max": "0"
+        },
+        "Column_42": {
+          "type": "number",
+          "default": "0",
+          "observed_values": [
+            "0"
+          ],
+          "min": "0",
+          "max": "0"
+        },
+        "Column_43": {
+          "type": "number",
+          "default": "0",
+          "observed_values": [
+            "0"
+          ],
+          "min": "0",
+          "max": "0"
+        },
+        "Column_44": {
+          "type": "number",
+          "default": "0",
+          "observed_values": [
+            "0"
+          ],
+          "min": "0",
+          "max": "0"
+        },
+        "Column_45": {
+          "type": "number",
+          "default": "0",
+          "observed_values": [
+            "0"
+          ],
+          "min": "0",
+          "max": "0"
+        },
+        "Column_46": {
+          "type": "number",
+          "default": "0",
+          "observed_values": [
+            "0"
+          ],
+          "min": "0",
+          "max": "0"
+        },
+        "Column_47": {
+          "type": "number",
+          "default": "0",
+          "observed_values": [
+            "0"
+          ],
+          "min": "0",
+          "max": "0"
+        },
+        "Column_48": {
+          "type": "number",
+          "default": "0",
+          "observed_values": [
+            "0"
+          ],
+          "min": "0",
+          "max": "0"
+        },
+        "Column_5": {
+          "type": "number",
+          "default": "0",
+          "observed_values": [
+            "0"
+          ],
+          "min": "0",
+          "max": "0"
+        },
+        "Column_6": {
+          "type": "number",
+          "default": "0",
+          "observed_values": [
+            "0"
+          ],
+          "min": "0",
+          "max": "0"
+        },
+        "Column_7": {
+          "type": "number",
+          "default": "0",
+          "observed_values": [
+            "0"
+          ],
+          "min": "0",
+          "max": "0"
+        },
+        "Column_8": {
+          "type": "number",
+          "default": "0",
+          "observed_values": [
+            "0"
+          ],
+          "min": "0",
+          "max": "0"
+        },
+        "Column_9": {
+          "type": "number",
+          "default": "0",
+          "observed_values": [
+            "0"
+          ],
+          "min": "0",
+          "max": "0"
+        },
+        "DefaultToColumn1": {
+          "type": "boolean",
+          "default": "Yes",
+          "observed_values": [
+            "Yes"
+          ]
+        },
+        "DispenseHeight": {
+          "type": "number",
+          "default": "1700",
+          "observed_values": [
+            "1700"
+          ],
+          "min": "1700",
+          "max": "1700"
+        },
+        "DispenseOrder": {
+          "type": "boolean",
+          "default": "No",
+          "observed_values": [
+            "No"
+          ]
+        },
+        "DispenseVolume": {
+          "type": "number",
+          "default": "50",
+          "observed_values": [
+            "50"
+          ],
+          "min": "50",
+          "max": "50"
+        },
+        "DispenseXOffset": {
+          "type": "number",
+          "default": "0",
+          "observed_values": [
+            "0"
+          ],
+          "min": "0",
+          "max": "0"
+        },
+        "DispenseYOffset": {
+          "type": "number",
+          "default": "0",
+          "observed_values": [
+            "0"
+          ],
+          "min": "0",
+          "max": "0"
+        },
+        "Duration": {
+          "type": "time",
+          "default": "00:00:10",
+          "observed_values": [
+            "00:00:10"
+          ],
+          "min": "00:00:10",
+          "max": "00:00:10"
+        },
+        "Enabled": {
+          "type": "boolean",
+          "default": "Yes",
+          "observed_values": [
+            "Yes"
+          ]
+        },
+        "FirstCol": {
+          "type": "number",
+          "default": "0",
+          "observed_values": [
+            "0"
+          ],
+          "min": "0",
+          "max": "0"
+        },
+        "FirstRow": {
+          "type": "number",
+          "default": "0",
+          "observed_values": [
+            "0"
+          ],
+          "min": "0",
+          "max": "0"
+        },
+        "Fluid": {
+          "type": "string",
+          "default": "Default Fluid",
+          "observed_values": [
+            "Default Fluid"
+          ]
+        },
+        "LastCol": {
+          "type": "number",
+          "default": "0",
+          "observed_values": [
+            "0"
+          ],
+          "min": "0",
+          "max": "0"
+        },
+        "LastRow": {
+          "type": "number",
+          "default": "0",
+          "observed_values": [
+            "0"
+          ],
+          "min": "0",
+          "max": "0"
+        },
+        "MaxDelaySpecified": {
+          "type": "boolean",
+          "default": "No",
+          "observed_values": [
+            "No"
+          ]
+        },
+        "MinDelay": {
+          "type": "time",
+          "default": "00:00:00",
+          "observed_values": [
+            "00:00:00"
+          ],
+          "min": "00:00:00",
+          "max": "00:00:00"
+        },
+        "PlateType": {
+          "type": "string",
+          "default": "96 standard (15mm)",
+          "observed_values": [
+            "96 standard (15mm)"
+          ]
+        },
+        "PrimeEnabled": {
+          "type": "boolean",
+          "default": "No",
+          "observed_values": [
+            "No"
+          ]
+        },
+        "PrimeVolume": {
+          "type": "number",
+          "default": "10",
+          "observed_values": [
+            "10"
+          ],
+          "min": "10",
+          "max": "10"
+        },
+        "PumpSpeed": {
+          "type": "number",
+          "default": "50",
+          "observed_values": [
+            "50"
+          ],
+          "min": "50",
+          "max": "50"
+        },
+        "RequestedMaxDelay": {
+          "type": "time",
+          "default": "00:00:00",
+          "observed_values": [
+            "00:00:00"
+          ],
+          "min": "00:00:00",
+          "max": "00:00:00"
+        },
+        "ReserveForIteration": {
+          "type": "string",
+          "default": "As Is",
+          "observed_values": [
+            "As Is"
+          ]
+        },
+        "RunOnAbortedIteration": {
+          "type": "boolean",
+          "default": "No",
+          "observed_values": [
+            "No"
+          ]
+        },
+        "SkipOnError": {
+          "type": "boolean",
+          "default": "No",
+          "observed_values": [
+            "No"
+          ]
+        },
+        "SpoilIfMaxDelayExceeded": {
+          "type": "boolean",
+          "default": "No",
+          "observed_values": [
+            "No"
+          ]
+        }
+      }
+    },
+    "Empty": {
+      "parameters": [
+        "Volume",
+        "EmptyTime",
+        "Fluid",
+        "CassetteID",
+        "ReserveForIteration",
+        "RunOnAbortedIteration",
+        "Duration",
+        "MinDelay",
+        "MaxDelaySpecified",
+        "RequestedMaxDelay",
+        "SpoilIfMaxDelayExceeded",
+        "Enabled",
+        "SkipOnError"
+      ],
+      "containers": [
+        {
+          "container": "I_PCR_96_Green",
+          "lid_state": null,
+          "location": "A_Combi_Shelf:Nest"
+        }
+      ],
+      "parameters_meta": {
+        "CassetteID": {
+          "type": "number",
+          "default": "0",
+          "observed_values": [
+            "0"
+          ],
+          "min": "0",
+          "max": "0"
+        },
+        "Duration": {
+          "type": "time",
+          "default": "00:00:02",
+          "observed_values": [
+            "00:00:02"
+          ],
+          "min": "00:00:02",
+          "max": "00:00:02"
+        },
+        "EmptyTime": {
+          "type": "number",
+          "default": "10",
+          "observed_values": [
+            "10"
+          ],
+          "min": "10",
+          "max": "10"
+        },
+        "Enabled": {
+          "type": "boolean",
+          "default": "Yes",
+          "observed_values": [
+            "Yes"
+          ]
+        },
+        "Fluid": {
+          "type": "string",
+          "default": "Default Fluid",
+          "observed_values": [
+            "Default Fluid"
+          ]
+        },
+        "MaxDelaySpecified": {
+          "type": "boolean",
+          "default": "No",
+          "observed_values": [
+            "No"
+          ]
+        },
+        "MinDelay": {
+          "type": "time",
+          "default": "00:00:00",
+          "observed_values": [
+            "00:00:00"
+          ],
+          "min": "00:00:00",
+          "max": "00:00:00"
+        },
+        "RequestedMaxDelay": {
+          "type": "time",
+          "default": "00:00:00",
+          "observed_values": [
+            "00:00:00"
+          ],
+          "min": "00:00:00",
+          "max": "00:00:00"
+        },
+        "ReserveForIteration": {
+          "type": "string",
+          "default": "As Is",
+          "observed_values": [
+            "As Is"
+          ]
+        },
+        "RunOnAbortedIteration": {
+          "type": "boolean",
+          "default": "No",
+          "observed_values": [
+            "No"
+          ]
+        },
+        "SkipOnError": {
+          "type": "boolean",
+          "default": "No",
+          "observed_values": [
+            "No"
+          ]
+        },
+        "SpoilIfMaxDelayExceeded": {
+          "type": "boolean",
+          "default": "No",
+          "observed_values": [
+            "No"
+          ]
+        },
+        "Volume": {
+          "type": "number",
+          "default": "10",
+          "observed_values": [
+            "10"
+          ],
+          "min": "10",
+          "max": "10"
+        }
+      }
+    },
+    "Incubate": {
+      "parameters": [
+        "ReserveForIteration",
+        "RunOnAbortedIteration",
+        "Duration",
+        "MinDelay",
+        "MaxDelaySpecified",
+        "RequestedMaxDelay",
+        "SpoilIfMaxDelayExceeded",
+        "Enabled",
+        "SkipOnError"
+      ],
+      "containers": [
+        {
+          "container": "I_PCR_96_Green",
+          "lid_state": null,
+          "location": "A_Combi_Shelf:Nest"
+        }
+      ],
+      "parameters_meta": {
+        "Duration": {
+          "type": "time",
+          "default": "00:00:01",
+          "observed_values": [
+            "00:00:01"
+          ],
+          "min": "00:00:01",
+          "max": "00:00:01"
+        },
+        "Enabled": {
+          "type": "boolean",
+          "default": "Yes",
+          "observed_values": [
+            "Yes"
+          ]
+        },
+        "MaxDelaySpecified": {
+          "type": "boolean",
+          "default": "No",
+          "observed_values": [
+            "No"
+          ]
+        },
+        "MinDelay": {
+          "type": "time",
+          "default": "00:00:00",
+          "observed_values": [
+            "00:00:00"
+          ],
+          "min": "00:00:00",
+          "max": "00:00:00"
+        },
+        "RequestedMaxDelay": {
+          "type": "time",
+          "default": "00:00:00",
+          "observed_values": [
+            "00:00:00"
+          ],
+          "min": "00:00:00",
+          "max": "00:00:00"
+        },
+        "ReserveForIteration": {
+          "type": "string",
+          "default": "As Is",
+          "observed_values": [
+            "As Is"
+          ]
+        },
+        "RunOnAbortedIteration": {
+          "type": "boolean",
+          "default": "No",
+          "observed_values": [
+            "No"
+          ]
+        },
+        "SkipOnError": {
+          "type": "boolean",
+          "default": "No",
+          "observed_values": [
+            "No"
+          ]
+        },
+        "SpoilIfMaxDelayExceeded": {
+          "type": "boolean",
+          "default": "No",
+          "observed_values": [
+            "No"
+          ]
+        }
+      }
+    },
+    "Load": {
+      "parameters": [
+        "ReserveForIteration",
+        "RunOnAbortedIteration",
+        "Duration",
+        "MinDelay",
+        "MaxDelaySpecified",
+        "RequestedMaxDelay",
+        "SpoilIfMaxDelayExceeded",
+        "Enabled",
+        "SkipOnError"
+      ],
+      "containers": [
+        {
+          "container": "I_PCR_96_Green",
+          "lid_state": null,
+          "location": "A_Combi_Shelf:Nest"
+        }
+      ],
+      "parameters_meta": {
+        "Duration": {
+          "type": "time",
+          "default": "00:00:01",
+          "observed_values": [
+            "00:00:01"
+          ],
+          "min": "00:00:01",
+          "max": "00:00:01"
+        },
+        "Enabled": {
+          "type": "boolean",
+          "default": "Yes",
+          "observed_values": [
+            "Yes"
+          ]
+        },
+        "MaxDelaySpecified": {
+          "type": "boolean",
+          "default": "No",
+          "observed_values": [
+            "No"
+          ]
+        },
+        "MinDelay": {
+          "type": "time",
+          "default": "00:00:00",
+          "observed_values": [
+            "00:00:00"
+          ],
+          "min": "00:00:00",
+          "max": "00:00:00"
+        },
+        "RequestedMaxDelay": {
+          "type": "time",
+          "default": "00:00:00",
+          "observed_values": [
+            "00:00:00"
+          ],
+          "min": "00:00:00",
+          "max": "00:00:00"
+        },
+        "ReserveForIteration": {
+          "type": "string",
+          "default": "As Is",
+          "observed_values": [
+            "As Is"
+          ]
+        },
+        "RunOnAbortedIteration": {
+          "type": "boolean",
+          "default": "No",
+          "observed_values": [
+            "No"
+          ]
+        },
+        "SkipOnError": {
+          "type": "boolean",
+          "default": "No",
+          "observed_values": [
+            "No"
+          ]
+        },
+        "SpoilIfMaxDelayExceeded": {
+          "type": "boolean",
+          "default": "No",
+          "observed_values": [
+            "No"
+          ]
+        }
+      }
+    },
+    "Prime": {
+      "parameters": [
+        "Volume",
+        "Fluid",
+        "CassetteID",
+        "ReserveForIteration",
+        "RunOnAbortedIteration",
+        "Duration",
+        "MinDelay",
+        "MaxDelaySpecified",
+        "RequestedMaxDelay",
+        "SpoilIfMaxDelayExceeded",
+        "Enabled",
+        "SkipOnError"
+      ],
+      "containers": [
+        {
+          "container": "I_PCR_96_Green",
+          "lid_state": null,
+          "location": "A_Combi_Shelf:Nest"
+        }
+      ],
+      "parameters_meta": {
+        "CassetteID": {
+          "type": "number",
+          "default": "0",
+          "observed_values": [
+            "0"
+          ],
+          "min": "0",
+          "max": "0"
+        },
+        "Duration": {
+          "type": "time",
+          "default": "00:00:02",
+          "observed_values": [
+            "00:00:02"
+          ],
+          "min": "00:00:02",
+          "max": "00:00:02"
+        },
+        "Enabled": {
+          "type": "boolean",
+          "default": "Yes",
+          "observed_values": [
+            "Yes"
+          ]
+        },
+        "Fluid": {
+          "type": "string",
+          "default": "Default Fluid",
+          "observed_values": [
+            "Default Fluid"
+          ]
+        },
+        "MaxDelaySpecified": {
+          "type": "boolean",
+          "default": "No",
+          "observed_values": [
+            "No"
+          ]
+        },
+        "MinDelay": {
+          "type": "time",
+          "default": "00:00:00",
+          "observed_values": [
+            "00:00:00"
+          ],
+          "min": "00:00:00",
+          "max": "00:00:00"
+        },
+        "RequestedMaxDelay": {
+          "type": "time",
+          "default": "00:00:00",
+          "observed_values": [
+            "00:00:00"
+          ],
+          "min": "00:00:00",
+          "max": "00:00:00"
+        },
+        "ReserveForIteration": {
+          "type": "string",
+          "default": "As Is",
+          "observed_values": [
+            "As Is"
+          ]
+        },
+        "RunOnAbortedIteration": {
+          "type": "boolean",
+          "default": "No",
+          "observed_values": [
+            "No"
+          ]
+        },
+        "SkipOnError": {
+          "type": "boolean",
+          "default": "No",
+          "observed_values": [
+            "No"
+          ]
+        },
+        "SpoilIfMaxDelayExceeded": {
+          "type": "boolean",
+          "default": "No",
+          "observed_values": [
+            "No"
+          ]
+        },
+        "Volume": {
+          "type": "number",
+          "default": "10",
+          "observed_values": [
+            "10"
+          ],
+          "min": "10",
+          "max": "10"
+        }
+      }
+    },
+    "Run Protocol": {
+      "parameters": [
+        "PlateType",
+        "ProtocolName",
+        "Fluid",
+        "PrimeVolume",
+        "PrimeEnabled",
+        "CassetteID",
+        "ReserveForIteration",
+        "RunOnAbortedIteration",
+        "Duration",
+        "MinDelay",
+        "MaxDelaySpecified",
+        "RequestedMaxDelay",
+        "SpoilIfMaxDelayExceeded",
+        "Enabled",
+        "SkipOnError"
+      ],
+      "containers": [
+        {
+          "container": "I_PCR_96_Green",
+          "lid_state": null,
+          "location": "A_Combi_Shelf:Nest"
+        }
+      ],
+      "parameters_meta": {
+        "CassetteID": {
+          "type": "number",
+          "default": "0",
+          "observed_values": [
+            "0"
+          ],
+          "min": "0",
+          "max": "0"
+        },
+        "Duration": {
+          "type": "time",
+          "default": "00:00:01",
+          "observed_values": [
+            "00:00:01"
+          ],
+          "min": "00:00:01",
+          "max": "00:00:01"
+        },
+        "Enabled": {
+          "type": "boolean",
+          "default": "Yes",
+          "observed_values": [
+            "Yes"
+          ]
+        },
+        "Fluid": {
+          "type": "string",
+          "default": "Default Fluid",
+          "observed_values": [
+            "Default Fluid"
+          ]
+        },
+        "MaxDelaySpecified": {
+          "type": "boolean",
+          "default": "No",
+          "observed_values": [
+            "No"
+          ]
+        },
+        "MinDelay": {
+          "type": "time",
+          "default": "00:00:00",
+          "observed_values": [
+            "00:00:00"
+          ],
+          "min": "00:00:00",
+          "max": "00:00:00"
+        },
+        "PlateType": {
+          "type": "string",
+          "default": "96 standard (15mm)",
+          "observed_values": [
+            "96 standard (15mm)"
+          ]
+        },
+        "PrimeEnabled": {
+          "type": "boolean",
+          "default": "No",
+          "observed_values": [
+            "No"
+          ]
+        },
+        "PrimeVolume": {
+          "type": "number",
+          "default": "10",
+          "observed_values": [
+            "10"
+          ],
+          "min": "10",
+          "max": "10"
+        },
+        "ProtocolName": {
+          "type": "string",
+          "default": "Default protocol",
+          "observed_values": [
+            "Default protocol"
+          ]
+        },
+        "RequestedMaxDelay": {
+          "type": "time",
+          "default": "00:00:00",
+          "observed_values": [
+            "00:00:00"
+          ],
+          "min": "00:00:00",
+          "max": "00:00:00"
+        },
+        "ReserveForIteration": {
+          "type": "string",
+          "default": "As Is",
+          "observed_values": [
+            "As Is"
+          ]
+        },
+        "RunOnAbortedIteration": {
+          "type": "boolean",
+          "default": "No",
+          "observed_values": [
+            "No"
+          ]
+        },
+        "SkipOnError": {
+          "type": "boolean",
+          "default": "No",
+          "observed_values": [
+            "No"
+          ]
+        },
+        "SpoilIfMaxDelayExceeded": {
+          "type": "boolean",
+          "default": "No",
+          "observed_values": [
+            "No"
+          ]
+        }
+      }
+    },
+    "Set Cassette ID": {
+      "parameters": [
+        "CassetteID",
+        "ReserveForIteration",
+        "RunOnAbortedIteration",
+        "Duration",
+        "MinDelay",
+        "MaxDelaySpecified",
+        "RequestedMaxDelay",
+        "SpoilIfMaxDelayExceeded",
+        "Enabled",
+        "SkipOnError"
+      ],
+      "containers": [],
+      "parameters_meta": {
+        "CassetteID": {
+          "type": "number",
+          "default": "0",
+          "observed_values": [
+            "0"
+          ],
+          "min": "0",
+          "max": "0"
+        },
+        "Duration": {
+          "type": "time",
+          "default": "00:00:01",
+          "observed_values": [
+            "00:00:01"
+          ],
+          "min": "00:00:01",
+          "max": "00:00:01"
+        },
+        "Enabled": {
+          "type": "boolean",
+          "default": "Yes",
+          "observed_values": [
+            "Yes"
+          ]
+        },
+        "MaxDelaySpecified": {
+          "type": "boolean",
+          "default": "No",
+          "observed_values": [
+            "No"
+          ]
+        },
+        "MinDelay": {
+          "type": "time",
+          "default": "00:00:00",
+          "observed_values": [
+            "00:00:00"
+          ],
+          "min": "00:00:00",
+          "max": "00:00:00"
+        },
+        "RequestedMaxDelay": {
+          "type": "time",
+          "default": "00:00:00",
+          "observed_values": [
+            "00:00:00"
+          ],
+          "min": "00:00:00",
+          "max": "00:00:00"
+        },
+        "ReserveForIteration": {
+          "type": "string",
+          "default": "As Is",
+          "observed_values": [
+            "As Is"
+          ]
+        },
+        "RunOnAbortedIteration": {
+          "type": "boolean",
+          "default": "No",
+          "observed_values": [
+            "No"
+          ]
+        },
+        "SkipOnError": {
+          "type": "boolean",
+          "default": "No",
+          "observed_values": [
+            "No"
+          ]
+        },
+        "SpoilIfMaxDelayExceeded": {
+          "type": "boolean",
+          "default": "No",
+          "observed_values": [
+            "No"
+          ]
+        }
+      }
+    },
+    "Shake": {
+      "parameters": [
+        "ShakeDistance",
+        "ShakeFrequency",
+        "ReserveForIteration",
+        "RunOnAbortedIteration",
+        "Duration",
+        "MinDelay",
+        "MaxDelaySpecified",
+        "RequestedMaxDelay",
+        "SpoilIfMaxDelayExceeded",
+        "Enabled",
+        "SkipOnError"
+      ],
+      "containers": [
+        {
+          "container": "I_PCR_96_Green",
+          "lid_state": null,
+          "location": "A_Combi_Shelf:Nest"
+        }
+      ],
+      "parameters_meta": {
+        "Duration": {
+          "type": "time",
+          "default": "00:00:01",
+          "observed_values": [
+            "00:00:01"
+          ],
+          "min": "00:00:01",
+          "max": "00:00:01"
+        },
+        "Enabled": {
+          "type": "boolean",
+          "default": "Yes",
+          "observed_values": [
+            "Yes"
+          ]
+        },
+        "MaxDelaySpecified": {
+          "type": "boolean",
+          "default": "No",
+          "observed_values": [
+            "No"
+          ]
+        },
+        "MinDelay": {
+          "type": "time",
+          "default": "00:00:00",
+          "observed_values": [
+            "00:00:00"
+          ],
+          "min": "00:00:00",
+          "max": "00:00:00"
+        },
+        "RequestedMaxDelay": {
+          "type": "time",
+          "default": "00:00:00",
+          "observed_values": [
+            "00:00:00"
+          ],
+          "min": "00:00:00",
+          "max": "00:00:00"
+        },
+        "ReserveForIteration": {
+          "type": "string",
+          "default": "As Is",
+          "observed_values": [
+            "As Is"
+          ]
+        },
+        "RunOnAbortedIteration": {
+          "type": "boolean",
+          "default": "No",
+          "observed_values": [
+            "No"
+          ]
+        },
+        "ShakeDistance": {
+          "type": "number",
+          "default": "1",
+          "observed_values": [
+            "1"
+          ],
+          "min": "1",
+          "max": "1"
+        },
+        "ShakeFrequency": {
+          "type": "number",
+          "default": "10",
+          "observed_values": [
+            "10"
+          ],
+          "min": "10",
+          "max": "10"
+        },
+        "SkipOnError": {
+          "type": "boolean",
+          "default": "No",
+          "observed_values": [
+            "No"
+          ]
+        },
+        "SpoilIfMaxDelayExceeded": {
+          "type": "boolean",
+          "default": "No",
+          "observed_values": [
+            "No"
+          ]
+        }
+      }
+    }
+  }
+}

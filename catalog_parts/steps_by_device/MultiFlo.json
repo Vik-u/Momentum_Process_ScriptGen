@@ -1,0 +1,396 @@
+{
+  "MultiFlo": {
+    "Incubate": {
+      "parameters": [
+        "ReserveForIteration",
+        "RunOnAbortedIteration",
+        "Duration",
+        "MinDelay",
+        "MaxDelaySpecified",
+        "RequestedMaxDelay",
+        "SpoilIfMaxDelayExceeded",
+        "Enabled",
+        "SkipOnError"
+      ],
+      "containers": [
+        {
+          "container": "I_PCR_96_Green",
+          "lid_state": "Unlidded",
+          "location": "MultiFlo:Nest"
+        }
+      ],
+      "parameters_meta": {
+        "Duration": {
+          "type": "time",
+          "default": "00:00:01",
+          "observed_values": [
+            "00:00:01"
+          ],
+          "min": "00:00:01",
+          "max": "00:00:01"
+        },
+        "Enabled": {
+          "type": "boolean",
+          "default": "Yes",
+          "observed_values": [
+            "Yes"
+          ]
+        },
+        "MaxDelaySpecified": {
+          "type": "boolean",
+          "default": "No",
+          "observed_values": [
+            "No"
+          ]
+        },
+        "MinDelay": {
+          "type": "time",
+          "default": "00:00:00",
+          "observed_values": [
+            "00:00:00"
+          ],
+          "min": "00:00:00",
+          "max": "00:00:00"
+        },
+        "RequestedMaxDelay": {
+          "type": "time",
+          "default": "00:00:00",
+          "observed_values": [
+            "00:00:00"
+          ],
+          "min": "00:00:00",
+          "max": "00:00:00"
+        },
+        "ReserveForIteration": {
+          "type": "string",
+          "default": "As Is",
+          "observed_values": [
+            "As Is"
+          ]
+        },
+        "RunOnAbortedIteration": {
+          "type": "boolean",
+          "default": "No",
+          "observed_values": [
+            "No"
+          ]
+        },
+        "SkipOnError": {
+          "type": "boolean",
+          "default": "No",
+          "observed_values": [
+            "No"
+          ]
+        },
+        "SpoilIfMaxDelayExceeded": {
+          "type": "boolean",
+          "default": "No",
+          "observed_values": [
+            "No"
+          ]
+        }
+      }
+    },
+    "Load": {
+      "parameters": [
+        "ReserveForIteration",
+        "RunOnAbortedIteration",
+        "Duration",
+        "MinDelay",
+        "MaxDelaySpecified",
+        "RequestedMaxDelay",
+        "SpoilIfMaxDelayExceeded",
+        "Enabled",
+        "SkipOnError"
+      ],
+      "containers": [
+        {
+          "container": "I_PCR_96_Green",
+          "lid_state": "Unlidded",
+          "location": "MultiFlo:Nest"
+        }
+      ],
+      "parameters_meta": {
+        "Duration": {
+          "type": "time",
+          "default": "00:00:01",
+          "observed_values": [
+            "00:00:01"
+          ],
+          "min": "00:00:01",
+          "max": "00:00:01"
+        },
+        "Enabled": {
+          "type": "boolean",
+          "default": "Yes",
+          "observed_values": [
+            "Yes"
+          ]
+        },
+        "MaxDelaySpecified": {
+          "type": "boolean",
+          "default": "No",
+          "observed_values": [
+            "No"
+          ]
+        },
+        "MinDelay": {
+          "type": "time",
+          "default": "00:00:00",
+          "observed_values": [
+            "00:00:00"
+          ],
+          "min": "00:00:00",
+          "max": "00:00:00"
+        },
+        "RequestedMaxDelay": {
+          "type": "time",
+          "default": "00:00:00",
+          "observed_values": [
+            "00:00:00"
+          ],
+          "min": "00:00:00",
+          "max": "00:00:00"
+        },
+        "ReserveForIteration": {
+          "type": "string",
+          "default": "As Is",
+          "observed_values": [
+            "As Is"
+          ]
+        },
+        "RunOnAbortedIteration": {
+          "type": "boolean",
+          "default": "No",
+          "observed_values": [
+            "No"
+          ]
+        },
+        "SkipOnError": {
+          "type": "boolean",
+          "default": "No",
+          "observed_values": [
+            "No"
+          ]
+        },
+        "SpoilIfMaxDelayExceeded": {
+          "type": "boolean",
+          "default": "No",
+          "observed_values": [
+            "No"
+          ]
+        }
+      }
+    },
+    "Run File Protocol": {
+      "parameters": [
+        "InputPath",
+        "MaximumOperationTime",
+        "ReserveForIteration",
+        "RunOnAbortedIteration",
+        "Duration",
+        "MinDelay",
+        "MaxDelaySpecified",
+        "RequestedMaxDelay",
+        "SpoilIfMaxDelayExceeded",
+        "Enabled",
+        "SkipOnError"
+      ],
+      "containers": [
+        {
+          "container": "I_PCR_96_Green",
+          "lid_state": "Unlidded",
+          "location": "MultiFlo:Nest"
+        }
+      ],
+      "parameters_meta": {
+        "Duration": {
+          "type": "time",
+          "default": "00:00:01",
+          "observed_values": [
+            "00:00:01"
+          ],
+          "min": "00:00:01",
+          "max": "00:00:01"
+        },
+        "Enabled": {
+          "type": "boolean",
+          "default": "Yes",
+          "observed_values": [
+            "Yes"
+          ]
+        },
+        "InputPath": {
+          "type": "string",
+          "default": "\\\\\\\\192.168.10.15\\\\c\\\\ProgramData\\\\BioTek\\\\Liquid Handling Control 2.22\\\\Protocols\\\\MultiFloFX",
+          "observed_values": [
+            "\\\\\\\\192.168.10.15\\\\c\\\\ProgramData\\\\BioTek\\\\Liquid Handling Control 2.22\\\\Protocols\\\\MultiFloFX"
+          ]
+        },
+        "MaxDelaySpecified": {
+          "type": "boolean",
+          "default": "No",
+          "observed_values": [
+            "No"
+          ]
+        },
+        "MaximumOperationTime": {
+          "type": "time",
+          "default": "00:20:00",
+          "observed_values": [
+            "00:20:00"
+          ],
+          "min": "00:20:00",
+          "max": "00:20:00"
+        },
+        "MinDelay": {
+          "type": "time",
+          "default": "00:00:00",
+          "observed_values": [
+            "00:00:00"
+          ],
+          "min": "00:00:00",
+          "max": "00:00:00"
+        },
+        "RequestedMaxDelay": {
+          "type": "time",
+          "default": "00:00:00",
+          "observed_values": [
+            "00:00:00"
+          ],
+          "min": "00:00:00",
+          "max": "00:00:00"
+        },
+        "ReserveForIteration": {
+          "type": "string",
+          "default": "As Is",
+          "observed_values": [
+            "As Is"
+          ]
+        },
+        "RunOnAbortedIteration": {
+          "type": "boolean",
+          "default": "No",
+          "observed_values": [
+            "No"
+          ]
+        },
+        "SkipOnError": {
+          "type": "boolean",
+          "default": "No",
+          "observed_values": [
+            "No"
+          ]
+        },
+        "SpoilIfMaxDelayExceeded": {
+          "type": "boolean",
+          "default": "No",
+          "observed_values": [
+            "No"
+          ]
+        }
+      }
+    },
+    "Run Onboard Protocol": {
+      "parameters": [
+        "MaximumOperationTime",
+        "ReserveForIteration",
+        "RunOnAbortedIteration",
+        "Duration",
+        "MinDelay",
+        "MaxDelaySpecified",
+        "RequestedMaxDelay",
+        "SpoilIfMaxDelayExceeded",
+        "Enabled",
+        "SkipOnError"
+      ],
+      "containers": [
+        {
+          "container": "I_PCR_96_Green",
+          "lid_state": "Unlidded",
+          "location": "MultiFlo:Nest"
+        }
+      ],
+      "parameters_meta": {
+        "Duration": {
+          "type": "time",
+          "default": "00:00:01",
+          "observed_values": [
+            "00:00:01"
+          ],
+          "min": "00:00:01",
+          "max": "00:00:01"
+        },
+        "Enabled": {
+          "type": "boolean",
+          "default": "Yes",
+          "observed_values": [
+            "Yes"
+          ]
+        },
+        "MaxDelaySpecified": {
+          "type": "boolean",
+          "default": "No",
+          "observed_values": [
+            "No"
+          ]
+        },
+        "MaximumOperationTime": {
+          "type": "time",
+          "default": "00:20:00",
+          "observed_values": [
+            "00:20:00"
+          ],
+          "min": "00:20:00",
+          "max": "00:20:00"
+        },
+        "MinDelay": {
+          "type": "time",
+          "default": "00:00:00",
+          "observed_values": [
+            "00:00:00"
+          ],
+          "min": "00:00:00",
+          "max": "00:00:00"
+        },
+        "RequestedMaxDelay": {
+          "type": "time",
+          "default": "00:00:00",
+          "observed_values": [
+            "00:00:00"
+          ],
+          "min": "00:00:00",
+          "max": "00:00:00"
+        },
+        "ReserveForIteration": {
+          "type": "string",
+          "default": "As Is",
+          "observed_values": [
+            "As Is"
+          ]
+        },
+        "RunOnAbortedIteration": {
+          "type": "boolean",
+          "default": "No",
+          "observed_values": [
+            "No"
+          ]
+        },
+        "SkipOnError": {
+          "type": "boolean",
+          "default": "No",
+          "observed_values": [
+            "No"
+          ]
+        },
+        "SpoilIfMaxDelayExceeded": {
+          "type": "boolean",
+          "default": "No",
+          "observed_values": [
+            "No"
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,754 @@
+// Generated: 2026-01-05T22:59:41.2365038Z
+profile [My System]
+{
+	// Devices and settings
+	devices
+	{
+		SwapStation AB_SwapStation
+			(Active = 'Active', TakeOfflineDuringChangeout = 'Yes');
+		ATC A_ATC384
+			(Active = 'Active', TakeOfflineDuringChangeout = 'Yes');
+		ATC A_ATC96_1
+			(Active = 'Active', TakeOfflineDuringChangeout = 'Yes');
+		ATC A_ATC96_2
+			(Active = 'Active', TakeOfflineDuringChangeout = 'Yes');
+		MultidropCombi A_Combi_Shelf
+			(ValvePortsUI = '8', InitFluid = 'Valve 1', ShowFavouriteFluids = 'No', 
+			PrimeWhenIdle = 'No', PrimeOnInitialization = 'Yes', 
+			PrimeVolumeWhenIdle = '10', PrimeIntervalWhenIdle = '5', 
+			CassetteID = '1', ChangeCassetteAtRuntime = 'No', Active = 'Active', 
+			TakeOfflineDuringChangeout = 'Yes');
+		Wtio A_Combi_Shelf_Valve
+			(Active = 'Active', TakeOfflineDuringChangeout = 'Yes');
+		Cytomat2C4 A_Cytomat2C
+			(CO2Deadband = '2', CO2Enable = 'No', CO2HiHiLimit = '55', 
+			CO2HiLimit = '50', CO2LoLimit = '40', CO2LoLoLimit = '35', 
+			HumidityDeadband = '2', HumidityEnable = 'No', HumidityHiHiLimit = '75', 
+			HumidityHiLimit = '70', HumidityLoLimit = '30', HumidityLoLoLimit = '25', 
+			O2Deadband = '2', O2Enable = 'No', O2HiHiLimit = '75', 
+			O2HiLimit = '70', O2LoLimit = '60', O2LoLoLimit = '55', 
+			TemperatureDeadband = '2', TemperatureEnable = 'No', 
+			TemperatureHiHiLimit = '45', TemperatureHiLimit = '39', 
+			TemperatureLoLimit = '35', TemperatureLoLoLimit = '30', 
+			ShakeDuringIncubate = 'Yes', ShakeWhenInitialized = 'No', 
+			StopShakingWhenOffline = 'No', RPMT1 = '100', RPMT2 = '100', 
+			ShakingFrequency = '12', ShakingAmplitude = '50', ScanBarcodeOnGet = 'No', 
+			Use20CharBarcode = 'No', SubstituteGetPutWithTransfer = 'No', 
+			ManagedTransferStation = 'No', FAMModeEnabled = 'No', 
+			SearchMode = 'Entire Device', HotelsOccupancyLabel = '<Click to Edit ...>', 
+			ContainersParticipationLabel = '<Click to Edit ...>', 
+			IncubateTimeout = '00:00:00', IncubateTimeoutHeatOff = 'No', 
+			LowerElevatorAfterAccess = 'No', Active = 'Active', 
+			TakeOfflineDuringChangeout = 'Yes');
+		Hotel A_Hotel_1
+			(Active = 'Active', TakeOfflineDuringChangeout = 'Yes');
+		Hotel A_Hotel_2
+			(Active = 'Active', TakeOfflineDuringChangeout = 'Yes');
+		Hotel A_Hotel_3
+			(Active = 'Inactive', TakeOfflineDuringChangeout = 'Yes');
+		Hotel A_Hotel_4
+			(Active = 'Inactive', TakeOfflineDuringChangeout = 'Yes');
+		SciPrintMP2 A_Labeler
+			(PlateMoveTo = 'Sample Plate', CleanLabelList = 'Sample Label', 
+			AvailPlateList = 'Sample Plate', Active = 'Active', 
+			TakeOfflineDuringChangeout = 'Yes');
+		QuantStudio7Pro A_PCR
+			(Active = 'Active', TakeOfflineDuringChangeout = 'Yes');
+		GenericMover A_SpinnakerXT
+			(ParkLocation = 'STDloc:safe', ParkMoverAtEndOfRun = 'No', 
+			MotionSettings = 'Velocity: 90%, Acceleration: 90%, Jerk: 100%', 
+			AllowLidding = 'Yes', AttendedActionForNoCode = 'Prompt', 
+			UnattendedActionForNoCode = 'Warning', Active = 'Active', 
+			TakeOfflineDuringChangeout = 'No');
+		Waste A_Waste
+			(Active = 'Active', TakeOfflineDuringChangeout = 'Yes');
+		ApplicationLauncherUtility ApplicationLauncher
+			(Active = 'Active', TakeOfflineDuringChangeout = 'Yes');
+		SwapStation BC_SwapStation
+			(Active = 'Active', TakeOfflineDuringChangeout = 'Yes');
+		ALPS5000 B_ALPS_Sealer
+			(PreHeatingTemperature = '165', SealTime = '2', SealLength = '120', 
+			SetpointMode = 'Distance', SealDistance = '30', SealForce = '8', 
+			Active = 'Active', TakeOfflineDuringChangeout = 'Yes');
+		HiG3Centrifuge B_Centrifuge
+			(CounterWeight = 'Bucket 2', SwitchBucketAfterAccess = 'No', 
+			SwitchBucketContextual = 'Yes', Active = 'Active', 
+			TakeOfflineDuringChangeout = 'Yes');
+		Cytomat10 B_Cytomat10C
+			(CO2Deadband = '2', CO2Enable = 'No', CO2HiHiLimit = '55', 
+			CO2HiLimit = '50', CO2LoLimit = '40', CO2LoLoLimit = '35', 
+			HumidityDeadband = '2', HumidityEnable = 'No', HumidityHiHiLimit = '75', 
+			HumidityHiLimit = '70', HumidityLoLimit = '30', HumidityLoLoLimit = '25', 
+			O2Deadband = '2', O2Enable = 'No', O2HiHiLimit = '75', 
+			O2HiLimit = '70', O2LoLimit = '60', O2LoLoLimit = '55', 
+			TemperatureDeadband = '2', TemperatureEnable = 'No', 
+			TemperatureHiHiLimit = '45', TemperatureHiLimit = '39', 
+			TemperatureLoLimit = '35', TemperatureLoLoLimit = '30', 
+			ShakeDuringIncubate = 'No', ShakeWhenInitialized = 'No', 
+			StopShakingWhenOffline = 'No', RPMT1 = '100', RPMT2 = '100', 
+			ShakingFrequency = '12', ShakingAmplitude = '50', ScanBarcodeOnGet = 'No', 
+			Use20CharBarcode = 'No', SubstituteGetPutWithTransfer = 'No', 
+			ManagedTransferStation = 'No', FAMModeEnabled = 'No', 
+			SearchMode = 'Entire Device', HotelsOccupancyLabel = '<Click to Edit ...>', 
+			ContainersParticipationLabel = '<Click to Edit ...>', 
+			IncubateTimeout = '00:00:00', IncubateTimeoutHeatOff = 'No', 
+			LowerElevatorAfterAccess = 'No', Active = 'Active', 
+			TakeOfflineDuringChangeout = 'Yes');
+		Cytomat2C4 B_Cytomat2C
+			(CO2Deadband = '2', CO2Enable = 'No', CO2HiHiLimit = '55', 
+			CO2HiLimit = '50', CO2LoLimit = '40', CO2LoLoLimit = '35', 
+			HumidityDeadband = '2', HumidityEnable = 'No', HumidityHiHiLimit = '75', 
+			HumidityHiLimit = '70', HumidityLoLimit = '30', HumidityLoLoLimit = '25', 
+			O2Deadband = '2', O2Enable = 'No', O2HiHiLimit = '75', 
+			O2HiLimit = '70', O2LoLimit = '60', O2LoLoLimit = '55', 
+			TemperatureDeadband = '2', TemperatureEnable = 'No', 
+			TemperatureHiHiLimit = '45', TemperatureHiLimit = '39', 
+			TemperatureLoLimit = '35', TemperatureLoLoLimit = '30', 
+			ShakeDuringIncubate = 'Yes', ShakeWhenInitialized = 'Yes', 
+			StopShakingWhenOffline = 'No', RPMT1 = '1200', RPMT2 = '1200', 
+			ShakingFrequency = '12', ShakingAmplitude = '50', ScanBarcodeOnGet = 'No', 
+			Use20CharBarcode = 'No', SubstituteGetPutWithTransfer = 'No', 
+			ManagedTransferStation = 'No', FAMModeEnabled = 'No', 
+			SearchMode = 'Entire Device', HotelsOccupancyLabel = '<Click to Edit ...>', 
+			ContainersParticipationLabel = '<Click to Edit ...>', 
+			IncubateTimeout = '00:00:00', IncubateTimeoutHeatOff = 'No', 
+			LowerElevatorAfterAccess = 'No', Active = 'Active', 
+			TakeOfflineDuringChangeout = 'Yes');
+		Fluent B_Fluent
+			(HandleLabwareInTransfer = 'No', Active = 'Active', 
+			TakeOfflineDuringChangeout = 'Yes');
+		RotationStation B_Fluent_RotationStation
+			(Active = 'Active', TakeOfflineDuringChangeout = 'Yes');
+		Hotel B_Hotel_1
+			(Active = 'Active', TakeOfflineDuringChangeout = 'Yes');
+		Hotel B_Hotel_2
+			(Active = 'Active', TakeOfflineDuringChangeout = 'Yes');
+		SkyLine B_SkyLine
+			(ScanBarcodeOnGet = 'Yes', ContainerProfilePath = 'C:\\Users\\Public\\Documents\\Thermo Scientific\\Momentum\\SkyLineContainerProfiles', 
+			Active = 'Active', TakeOfflineDuringChangeout = 'Yes');
+		Spark B_Spark_Reader
+			(ProtocolPathListUI = '<Click Button to Edit>', KeepDoorOpenBetweenRead = 'Yes', 
+			Active = 'Active', TakeOfflineDuringChangeout = 'Yes');
+		GenericMover B_SpinnakerBT
+			(ParkLocation = 'STDloc:safe', ParkMoverAtEndOfRun = 'No', 
+			MotionSettings = 'Velocity: 90%, Acceleration: 90%, Jerk: 100%', 
+			AllowLidding = 'Yes', AttendedActionForNoCode = 'Prompt', 
+			UnattendedActionForNoCode = 'Warning', Active = 'Active', 
+			TakeOfflineDuringChangeout = 'No');
+		GenericNest B_Transfer_Nest
+			(Active = 'Active', TakeOfflineDuringChangeout = 'Yes');
+		XPeel B_XPeel
+			(ElevateWarningsToErrors = 'No', IgnoreSealNotRemovedErrors = 'No', 
+			EnablePlatePresenceCheck = 'No', GetRemainingSealsOnStartup = 'No', 
+			Active = 'Active', TakeOfflineDuringChangeout = 'Yes');
+		a4S B_a4S_Sealer
+			(SealingTemperature = '170', SealingTime = '2', SealHeight = '0', 
+			TemperatureOffset = '0', HeaterOn = 'Yes', Active = 'Active', 
+			TakeOfflineDuringChangeout = 'Yes');
+		Echo6XX C_Echo
+			(LeaveBubblerPumpRunning = 'True', SkipPlatePropertyValidation = 'False', 
+			SetBarcodeCheck = 'No', ScanBarcodeUsingEcho = 'No', 
+			KeepDoorOpen = 'No', Active = 'Active', TakeOfflineDuringChangeout = 'Yes');
+		EchoMS C_EchoMS
+			(InstrumentName = 'Echo® MS+ system', Active = 'Active', 
+			TakeOfflineDuringChangeout = 'Yes');
+		Hotel C_Hotel_1
+			(Active = 'Active', TakeOfflineDuringChangeout = 'Yes');
+		Hotel C_Hotel_2
+			(Active = 'Active', TakeOfflineDuringChangeout = 'Yes');
+		Hotel C_Hotel_Temp
+			(Active = 'Active', TakeOfflineDuringChangeout = 'Yes');
+		Lidpark C_LidPark
+			(RegripBeforeLidDelid = 'Yes', DelidToStorageNests = 'No', 
+			LidFromStorageNests = 'No', Active = 'Active', TakeOfflineDuringChangeout = 'Yes');
+		Wtio C_LidPark_IO
+			(Active = 'Active', TakeOfflineDuringChangeout = 'Yes');
+		PIXL C_PIXL
+			(RunOnLowPickupLine = 'No', PickupLineInMeters = '187.15812683105469', 
+			Active = 'Active', TakeOfflineDuringChangeout = 'Yes');
+		SingleNest3000Series C_Shaker
+			(ProfileTemperature = '23', ProfileWaitTillComplete = 'No', 
+			ProfileTimeout = '00:05:00', ProfileIgnoreTimeoutError = 'No', 
+			Active = 'Active', TakeOfflineDuringChangeout = 'Yes');
+		GenericMover C_SpinnakerBT
+			(ParkLocation = 'STDloc:safe', ParkMoverAtEndOfRun = 'No', 
+			MotionSettings = 'Velocity: 90%, Acceleration: 90%, Jerk: 100%', 
+			AllowLidding = 'No', AttendedActionForNoCode = 'Prompt', 
+			UnattendedActionForNoCode = 'Warning', Active = 'Active', 
+			TakeOfflineDuringChangeout = 'No');
+		XPeel C_XPeel
+			(ElevateWarningsToErrors = 'No', IgnoreSealNotRemovedErrors = 'No', 
+			EnablePlatePresenceCheck = 'No', GetRemainingSealsOnStartup = 'No', 
+			Active = 'Active', TakeOfflineDuringChangeout = 'Yes');
+		MultidropCombi Combi_Cart
+			(ValvePortsUI = '8', InitFluid = 'Valve 1', ShowFavouriteFluids = 'No', 
+			PrimeWhenIdle = 'No', PrimeOnInitialization = 'Yes', 
+			PrimeVolumeWhenIdle = '10', PrimeIntervalWhenIdle = '5', 
+			CassetteID = '1', ChangeCassetteAtRuntime = 'No', Active = 'Active', 
+			TakeOfflineDuringChangeout = 'Yes');
+		Wtio Combi_Cart_Valve
+			(Active = 'Active', TakeOfflineDuringChangeout = 'Yes');
+		ContainerScanner ContainerScanner
+			(Active = 'Active', TakeOfflineDuringChangeout = 'Yes');
+		DataBuilder DataBuilder
+			(Active = 'Active', TakeOfflineDuringChangeout = 'Yes');
+		DataMiner DataMiner
+			(Active = 'Active', TakeOfflineDuringChangeout = 'Yes');
+		Docking Docking
+			(Active = 'Active', TakeOfflineDuringChangeout = 'Yes');
+		FileManager FileManager
+			(Active = 'Active', TakeOfflineDuringChangeout = 'Yes');
+		Infinity Fragment_Analyzer
+			(CapillarySize = '33 cm', Active = 'Active', TakeOfflineDuringChangeout = 'Yes');
+		Wtio GPIO_1
+			(Active = 'Active', TakeOfflineDuringChangeout = 'Yes');
+		Wtio GPIO_2
+			(Active = 'Active', TakeOfflineDuringChangeout = 'Yes');
+		Lunatic Lunatic_Reader
+			(experimentLocation = 'C:\\temp\\', resultDefinitionLocation = 'C:\\temp\\', 
+			plateLayoutLocation = 'C:\\temp\\', Active = 'Active', 
+			TakeOfflineDuringChangeout = 'Yes');
+		MomentumOperator MomentumOperator
+			(Active = 'Active', TakeOfflineDuringChangeout = 'Yes');
+		MultiFlo MultiFlo
+			(DoPrepare = 'No', Active = 'Active', TakeOfflineDuringChangeout = 'Yes');
+		KingfisherPresto Presto
+			(Active = 'Active', TakeOfflineDuringChangeout = 'Yes');
+		Hotel Presto_Hotel
+			(Active = 'Active', TakeOfflineDuringChangeout = 'Yes');
+		SingleNest3000Series Shaker_1_Cart
+			(ProfileTemperature = '23', ProfileWaitTillComplete = 'No', 
+			ProfileTimeout = '00:05:00', ProfileIgnoreTimeoutError = 'No', 
+			Active = 'Active', TakeOfflineDuringChangeout = 'Yes');
+		SingleNest3000Series Shaker_2_Cart
+			(ProfileTemperature = '23', ProfileWaitTillComplete = 'No', 
+			ProfileTimeout = '00:05:00', ProfileIgnoreTimeoutError = 'No', 
+			Active = 'Active', TakeOfflineDuringChangeout = 'Yes');
+	}
+
+	// Device Pools
+	pools
+	{
+		StoragePool A_Hotel_Pool
+			(Strategy = 'Priority First Available', ResetOnNewWorkUnit = 'Yes', 
+			SkipError = 'No', SkipOffline = 'No', OfflineSkipDuration = '00:00:00', 
+			SkipUndocked = 'No', UndockedSkipDuration = '00:00:00') A_Hotel_1,A_Hotel_2,A_Hotel_3,A_Hotel_4 ;
+		OperationPool ATC96_Pool
+			(Strategy = 'Priority First Available', SkipError = 'No', 
+			SkipOffline = 'No', OfflineSkipDuration = '00:00:00', 
+			SkipUndocked = 'No', UndockedSkipDuration = '00:00:00') A_ATC96_1,A_ATC96_2 ;
+		StoragePool B_Hotel_Pool
+			(Strategy = 'Priority First Available', ResetOnNewWorkUnit = 'Yes', 
+			SkipError = 'No', SkipOffline = 'No', OfflineSkipDuration = '00:00:00', 
+			SkipUndocked = 'No', UndockedSkipDuration = '00:00:00') B_Hotel_1,B_Hotel_2 ;
+		StoragePool C_Hotel_Pool
+			(Strategy = 'Priority First Available', ResetOnNewWorkUnit = 'Yes', 
+			SkipError = 'No', SkipOffline = 'No', OfflineSkipDuration = '00:00:00', 
+			SkipUndocked = 'No', UndockedSkipDuration = '00:00:00') C_Hotel_1,C_Hotel_2 ;
+		OperationPool Cart_Shakers
+			(Strategy = 'Priority First Available', SkipError = 'No', 
+			SkipOffline = 'No', OfflineSkipDuration = '00:00:00', 
+			SkipUndocked = 'No', UndockedSkipDuration = '00:00:00') Shaker_1_Cart,Shaker_2_Cart ;
+	}
+
+	// Profile variables
+	variables
+	{
+		String EchoControlsPicklistFile
+			(PromptForValue = 'No', Persist = 'No', Shared = 'Iteration', 
+			Capacity = '1');
+		String EchoPicklistFile
+			(PromptForValue = 'No', Persist = 'No', Shared = 'Iteration', 
+			Capacity = '1');
+		String EchoProtocolFile
+			(PromptForValue = 'No', Persist = 'No', Shared = 'Iteration', 
+			Capacity = '1');
+		String Global_NextLocation
+			(PromptForValue = 'No', Persist = 'No', Shared = 'Iteration', 
+			Capacity = '1');
+		Integer Global_NumOfDetectedColonies
+			(DefaultValue = '0', PromptForValue = 'No', Persist = 'No', 
+			Shared = 'Iteration', Capacity = '1');
+		Boolean Lock_EchoProtocol
+			(DefaultValue = 'No', PromptForValue = 'No', Persist = 'No', 
+			Shared = 'Iteration', Capacity = '1');
+		Boolean Lock_PreEcho_Ops
+			(DefaultValue = 'No', PromptForValue = 'No', Persist = 'No', 
+			Shared = 'Iteration', Capacity = '1');
+		Integer NumProtocolStepsProfile
+			(DefaultValue = '0', PromptForValue = 'No', Persist = 'No', 
+			Shared = 'Iteration', Capacity = '1');
+	}
+
+	// ******************  Version 1  ******************
+	// User: Admin  Date: 2026-01-05T16:59:38.4907620-06:00
+	process [Cloud_Biofoundry\\db2]
+	{
+		// Process steps
+		A_Cytomat2C [Load]
+			(ReserveForIteration = 'As Is', RunOnAbortedIteration = 'No', 
+			Duration = '00:00:01', MinDelay = '00:00:00', MaxDelaySpecified = 'No', 
+			RequestedMaxDelay = '00:00:00', SpoilIfMaxDelayExceeded = 'No', 
+			Enabled = 'Yes', SkipOnError = 'No')
+			I_DWP GetMyOwnContainer;
+
+		A_Cytomat2C [Set Shake Speeds]
+			(Tower1Speed = '100', Tower2Speed = '100', ReserveForIteration = 'As Is', 
+			RunOnAbortedIteration = 'No', Duration = '00:00:00', 
+			MinDelay = '00:00:00', MaxDelaySpecified = 'No', RequestedMaxDelay = '00:00:00', 
+			SpoilIfMaxDelayExceeded = 'No', Enabled = 'Yes', SkipOnError = 'No');
+
+		B_Cytomat2C [Load]
+			(ReserveForIteration = 'As Is', RunOnAbortedIteration = 'No', 
+			Duration = '00:00:01', MinDelay = '00:00:00', MaxDelaySpecified = 'No', 
+			RequestedMaxDelay = '00:00:00', SpoilIfMaxDelayExceeded = 'No', 
+			Enabled = 'Yes', SkipOnError = 'No')
+			I_DWP GetMyOwnContainer;
+
+		B_Cytomat2C [Set Shake Speeds]
+			(Tower1Speed = '100', Tower2Speed = '100', ReserveForIteration = 'As Is', 
+			RunOnAbortedIteration = 'No', Duration = '00:00:00', 
+			MinDelay = '00:00:00', MaxDelaySpecified = 'No', RequestedMaxDelay = '00:00:00', 
+			SpoilIfMaxDelayExceeded = 'No', Enabled = 'Yes', SkipOnError = 'No');
+
+		Fragment_Analyzer [Load]
+			(ReserveForIteration = 'As Is', RunOnAbortedIteration = 'No', 
+			Duration = '00:00:01', MinDelay = '00:00:00', MaxDelaySpecified = 'No', 
+			RequestedMaxDelay = '00:00:00', SpoilIfMaxDelayExceeded = 'No', 
+			Enabled = 'Yes', SkipOnError = 'No')
+			I_PCR_96_Green 'Unlidded' in 'Fragment_Analyzer:Sample' GetMyOwnContainer;
+
+		Fragment_Analyzer [Incubate]
+			(ReserveForIteration = 'As Is', RunOnAbortedIteration = 'No', 
+			Duration = '00:00:01', MinDelay = '00:00:00', MaxDelaySpecified = 'No', 
+			RequestedMaxDelay = '00:00:00', SpoilIfMaxDelayExceeded = 'No', 
+			Enabled = 'Yes', SkipOnError = 'No')
+			I_PCR_96_Green 'Unlidded' in 'Fragment_Analyzer:Sample' GetMyOwnContainer;
+
+		Fragment_Analyzer [Run Method]
+			(ReserveForIteration = 'As Is', RunOnAbortedIteration = 'No', 
+			Duration = '00:00:01', MinDelay = '00:00:00', MaxDelaySpecified = 'No', 
+			RequestedMaxDelay = '00:00:00', SpoilIfMaxDelayExceeded = 'No', 
+			Enabled = 'Yes', SkipOnError = 'No')
+			I_PCR_96_Green 'Unlidded' in 'Fragment_Analyzer:Sample' GetMyOwnContainer;
+
+		A_Hotel_Pool [Load]
+			(ReserveForIteration = 'As Is', RunOnAbortedIteration = 'No', 
+			Duration = '00:00:01', MinDelay = '00:00:00', MaxDelaySpecified = 'No', 
+			RequestedMaxDelay = '00:00:00', SpoilIfMaxDelayExceeded = 'No', 
+			Enabled = 'Yes', SkipOnError = 'No')
+			I_PCR_96_Green GetMyOwnContainer;
+
+		B_Hotel_Pool [Load]
+			(ReserveForIteration = 'As Is', RunOnAbortedIteration = 'No', 
+			Duration = '00:00:01', MinDelay = '00:00:00', MaxDelaySpecified = 'No', 
+			RequestedMaxDelay = '00:00:00', SpoilIfMaxDelayExceeded = 'No', 
+			Enabled = 'Yes', SkipOnError = 'No')
+			I_PCR_96_Green GetMyOwnContainer;
+
+		C_Hotel_Pool [Load]
+			(ReserveForIteration = 'As Is', RunOnAbortedIteration = 'No', 
+			Duration = '00:00:01', MinDelay = '00:00:00', MaxDelaySpecified = 'No', 
+			RequestedMaxDelay = '00:00:00', SpoilIfMaxDelayExceeded = 'No', 
+			Enabled = 'Yes', SkipOnError = 'No')
+			I_PCR_96_Green GetMyOwnContainer;
+
+		Presto_Hotel [Load]
+			(ReserveForIteration = 'As Is', RunOnAbortedIteration = 'No', 
+			Duration = '00:00:01', MinDelay = '00:00:00', MaxDelaySpecified = 'No', 
+			RequestedMaxDelay = '00:00:00', SpoilIfMaxDelayExceeded = 'No', 
+			Enabled = 'Yes', SkipOnError = 'No')
+			I_PCR_96_Green GetMyOwnContainer;
+
+		Lunatic_Reader [Load]
+			(ReserveForIteration = 'As Is', RunOnAbortedIteration = 'No', 
+			Duration = '00:00:01', MinDelay = '00:00:00', MaxDelaySpecified = 'No', 
+			RequestedMaxDelay = '00:00:00', SpoilIfMaxDelayExceeded = 'No', 
+			Enabled = 'Yes', SkipOnError = 'No')
+			I_PCR_96_Green 'Unlidded' in 'Lunatic_Reader:Nest' GetMyOwnContainer;
+
+		Lunatic_Reader [Run Script]
+			(currentExperiment = 'DefaultName', currentPlateLayout = 'DefaultName', 
+			currentResultDefinition = 'DefaultName', experimentName = 'DefaultName.txt', 
+			LogLocation = 'C:\\temp', readBarcode = 'No', ReserveForIteration = 'As Is', 
+			RunOnAbortedIteration = 'No', Duration = '00:00:01', 
+			MinDelay = '00:00:00', MaxDelaySpecified = 'No', RequestedMaxDelay = '00:00:00', 
+			SpoilIfMaxDelayExceeded = 'No', Enabled = 'Yes', SkipOnError = 'No')
+			I_PCR_96_Green 'Unlidded' in 'Lunatic_Reader:Nest' GetMyOwnContainer;
+
+		MomentumOperator [Request Data]
+			(Title = 'Title', SaveValues = 'Yes', AllowCancellation = 'No', 
+			Duration = '00:00:01', MinDelay = '00:00:00', MaxDelaySpecified = 'No', 
+			RequestedMaxDelay = '00:00:00', SpoilIfMaxDelayExceeded = 'No', 
+			Enabled = 'Yes', SkipOnError = 'No');
+
+		MomentumOperator [Relocate]
+			(ShowPrompt = 'Yes', Duration = '00:00:00', MinDelay = '00:00:00', 
+			MaxDelaySpecified = 'No', RequestedMaxDelay = '00:00:00', 
+			SpoilIfMaxDelayExceeded = 'No', Enabled = 'Yes', SkipOnError = 'No');
+
+		MomentumOperator [Manual]
+			(PauseSystem = 'No', TaskAction = 'Show', ShowAsError = 'Yes', 
+			TaskTimeout = '00:00:00', AllowCancellation = 'No', 
+			Duration = '00:00:01', MinDelay = '00:00:00', MaxDelaySpecified = 'No', 
+			RequestedMaxDelay = '00:00:00', SpoilIfMaxDelayExceeded = 'No', 
+			Enabled = 'Yes', SkipOnError = 'No');
+
+		A_Combi_Shelf [Load]
+			(ReserveForIteration = 'As Is', RunOnAbortedIteration = 'No', 
+			Duration = '00:00:01', MinDelay = '00:00:00', MaxDelaySpecified = 'No', 
+			RequestedMaxDelay = '00:00:00', SpoilIfMaxDelayExceeded = 'No', 
+			Enabled = 'Yes', SkipOnError = 'No')
+			I_PCR_96_Green in 'A_Combi_Shelf:Nest' GetMyOwnContainer;
+
+		A_Combi_Shelf [Set Cassette ID]
+			(CassetteID = '0', ReserveForIteration = 'As Is', RunOnAbortedIteration = 'No', 
+			Duration = '00:00:01', MinDelay = '00:00:00', MaxDelaySpecified = 'No', 
+			RequestedMaxDelay = '00:00:00', SpoilIfMaxDelayExceeded = 'No', 
+			Enabled = 'Yes', SkipOnError = 'No');
+
+		A_Combi_Shelf [Incubate]
+			(ReserveForIteration = 'As Is', RunOnAbortedIteration = 'No', 
+			Duration = '00:00:01', MinDelay = '00:00:00', MaxDelaySpecified = 'No', 
+			RequestedMaxDelay = '00:00:00', SpoilIfMaxDelayExceeded = 'No', 
+			Enabled = 'Yes', SkipOnError = 'No')
+			I_PCR_96_Green in 'A_Combi_Shelf:Nest' GetMyOwnContainer;
+
+		A_Combi_Shelf [Run Protocol]
+			(PlateType = '96 standard (15mm)', ProtocolName = 'Default protocol', 
+			Fluid = 'Default Fluid', PrimeVolume = '10', PrimeEnabled = 'No', 
+			CassetteID = '0', ReserveForIteration = 'As Is', RunOnAbortedIteration = 'No', 
+			Duration = '00:00:01', MinDelay = '00:00:00', MaxDelaySpecified = 'No', 
+			RequestedMaxDelay = '00:00:00', SpoilIfMaxDelayExceeded = 'No', 
+			Enabled = 'Yes', SkipOnError = 'No')
+			I_PCR_96_Green in 'A_Combi_Shelf:Nest' GetMyOwnContainer;
+
+		A_Combi_Shelf [Shake]
+			(ShakeDistance = '1', ShakeFrequency = '10', ReserveForIteration = 'As Is', 
+			RunOnAbortedIteration = 'No', Duration = '00:00:01', 
+			MinDelay = '00:00:00', MaxDelaySpecified = 'No', RequestedMaxDelay = '00:00:00', 
+			SpoilIfMaxDelayExceeded = 'No', Enabled = 'Yes', SkipOnError = 'No')
+			I_PCR_96_Green in 'A_Combi_Shelf:Nest' GetMyOwnContainer;
+
+		A_Combi_Shelf [Dispense]
+			(CassetteID = '0', DispenseVolume = '50', FirstCol = '0', 
+			FirstRow = '0', LastCol = '0', LastRow = '0', PlateType = '96 standard (15mm)', 
+			DispenseOrder = 'No', Fluid = 'Default Fluid', PrimeVolume = '10', 
+			PrimeEnabled = 'No', PumpSpeed = '50', DispenseHeight = '1700', 
+			DispenseXOffset = '0', DispenseYOffset = '0', DefaultToColumn1 = 'Yes', 
+			Column_1 = '0', Column_2 = '0', Column_3 = '0', Column_4 = '0', 
+			Column_5 = '0', Column_6 = '0', Column_7 = '0', Column_8 = '0', 
+			Column_9 = '0', Column_10 = '0', Column_11 = '0', Column_12 = '0', 
+			Column_13 = '0', Column_14 = '0', Column_15 = '0', 
+			Column_16 = '0', Column_17 = '0', Column_18 = '0', 
+			Column_19 = '0', Column_20 = '0', Column_21 = '0', 
+			Column_22 = '0', Column_23 = '0', Column_24 = '0', 
+			Column_25 = '0', Column_26 = '0', Column_27 = '0', 
+			Column_28 = '0', Column_29 = '0', Column_30 = '0', 
+			Column_31 = '0', Column_32 = '0', Column_33 = '0', 
+			Column_34 = '0', Column_35 = '0', Column_36 = '0', 
+			Column_37 = '0', Column_38 = '0', Column_39 = '0', 
+			Column_40 = '0', Column_41 = '0', Column_42 = '0', 
+			Column_43 = '0', Column_44 = '0', Column_45 = '0', 
+			Column_46 = '0', Column_47 = '0', Column_48 = '0', 
+			ReserveForIteration = 'As Is', RunOnAbortedIteration = 'No', 
+			Duration = '00:00:10', MinDelay = '00:00:00', MaxDelaySpecified = 'No', 
+			RequestedMaxDelay = '00:00:00', SpoilIfMaxDelayExceeded = 'No', 
+			Enabled = 'Yes', SkipOnError = 'No')
+			I_PCR_96_Green in 'A_Combi_Shelf:Nest' GetMyOwnContainer;
+
+		A_Combi_Shelf [Prime]
+			(Volume = '10', Fluid = 'Default Fluid', CassetteID = '0', 
+			ReserveForIteration = 'As Is', RunOnAbortedIteration = 'No', 
+			Duration = '00:00:02', MinDelay = '00:00:00', MaxDelaySpecified = 'No', 
+			RequestedMaxDelay = '00:00:00', SpoilIfMaxDelayExceeded = 'No', 
+			Enabled = 'Yes', SkipOnError = 'No')
+			I_PCR_96_Green in 'A_Combi_Shelf:Nest' GetMyOwnContainer;
+
+		A_Combi_Shelf [Empty]
+			(Volume = '10', EmptyTime = '10', Fluid = 'Default Fluid', 
+			CassetteID = '0', ReserveForIteration = 'As Is', RunOnAbortedIteration = 'No', 
+			Duration = '00:00:02', MinDelay = '00:00:00', MaxDelaySpecified = 'No', 
+			RequestedMaxDelay = '00:00:00', SpoilIfMaxDelayExceeded = 'No', 
+			Enabled = 'Yes', SkipOnError = 'No')
+			I_PCR_96_Green in 'A_Combi_Shelf:Nest' GetMyOwnContainer;
+
+		Combi_Cart [Load]
+			(ReserveForIteration = 'As Is', RunOnAbortedIteration = 'No', 
+			Duration = '00:00:01', MinDelay = '00:00:00', MaxDelaySpecified = 'No', 
+			RequestedMaxDelay = '00:00:00', SpoilIfMaxDelayExceeded = 'No', 
+			Enabled = 'Yes', SkipOnError = 'No')
+			I_PCR_96_Green 'Unlidded' in 'Combi_Cart:Nest' GetMyOwnContainer;
+
+		Combi_Cart [Incubate]
+			(ReserveForIteration = 'As Is', RunOnAbortedIteration = 'No', 
+			Duration = '00:00:01', MinDelay = '00:00:00', MaxDelaySpecified = 'No', 
+			RequestedMaxDelay = '00:00:00', SpoilIfMaxDelayExceeded = 'No', 
+			Enabled = 'Yes', SkipOnError = 'No')
+			I_PCR_96_Green 'Unlidded' in 'Combi_Cart:Nest' GetMyOwnContainer;
+
+		Combi_Cart [Set Cassette ID]
+			(CassetteID = '0', ReserveForIteration = 'As Is', RunOnAbortedIteration = 'No', 
+			Duration = '00:00:01', MinDelay = '00:00:00', MaxDelaySpecified = 'No', 
+			RequestedMaxDelay = '00:00:00', SpoilIfMaxDelayExceeded = 'No', 
+			Enabled = 'Yes', SkipOnError = 'No');
+
+		Combi_Cart [Run Protocol]
+			(PlateType = '96 standard (15mm)', ProtocolName = 'Default protocol', 
+			Fluid = 'Default Fluid', PrimeVolume = '10', PrimeEnabled = 'No', 
+			CassetteID = '0', ReserveForIteration = 'As Is', RunOnAbortedIteration = 'No', 
+			Duration = '00:00:01', MinDelay = '00:00:00', MaxDelaySpecified = 'No', 
+			RequestedMaxDelay = '00:00:00', SpoilIfMaxDelayExceeded = 'No', 
+			Enabled = 'Yes', SkipOnError = 'No')
+			I_PCR_96_Green 'Unlidded' in 'Combi_Cart:Nest' GetMyOwnContainer;
+
+		Combi_Cart [Shake]
+			(ShakeDistance = '1', ShakeFrequency = '10', ReserveForIteration = 'As Is', 
+			RunOnAbortedIteration = 'No', Duration = '00:00:01', 
+			MinDelay = '00:00:00', MaxDelaySpecified = 'No', RequestedMaxDelay = '00:00:00', 
+			SpoilIfMaxDelayExceeded = 'No', Enabled = 'Yes', SkipOnError = 'No')
+			I_PCR_96_Green 'Unlidded' in 'Combi_Cart:Nest' GetMyOwnContainer;
+
+		Combi_Cart [Dispense]
+			(CassetteID = '0', DispenseVolume = '50', FirstCol = '0', 
+			FirstRow = '0', LastCol = '0', LastRow = '0', PlateType = '96 standard (15mm)', 
+			DispenseOrder = 'No', Fluid = 'Default Fluid', PrimeVolume = '10', 
+			PrimeEnabled = 'No', PumpSpeed = '50', DispenseHeight = '1700', 
+			DispenseXOffset = '0', DispenseYOffset = '0', DefaultToColumn1 = 'Yes', 
+			Column_1 = '0', Column_2 = '0', Column_3 = '0', Column_4 = '0', 
+			Column_5 = '0', Column_6 = '0', Column_7 = '0', Column_8 = '0', 
+			Column_9 = '0', Column_10 = '0', Column_11 = '0', Column_12 = '0', 
+			Column_13 = '0', Column_14 = '0', Column_15 = '0', 
+			Column_16 = '0', Column_17 = '0', Column_18 = '0', 
+			Column_19 = '0', Column_20 = '0', Column_21 = '0', 
+			Column_22 = '0', Column_23 = '0', Column_24 = '0', 
+			Column_25 = '0', Column_26 = '0', Column_27 = '0', 
+			Column_28 = '0', Column_29 = '0', Column_30 = '0', 
+			Column_31 = '0', Column_32 = '0', Column_33 = '0', 
+			Column_34 = '0', Column_35 = '0', Column_36 = '0', 
+			Column_37 = '0', Column_38 = '0', Column_39 = '0', 
+			Column_40 = '0', Column_41 = '0', Column_42 = '0', 
+			Column_43 = '0', Column_44 = '0', Column_45 = '0', 
+			Column_46 = '0', Column_47 = '0', Column_48 = '0', 
+			ReserveForIteration = 'As Is', RunOnAbortedIteration = 'No', 
+			Duration = '00:00:10', MinDelay = '00:00:00', MaxDelaySpecified = 'No', 
+			RequestedMaxDelay = '00:00:00', SpoilIfMaxDelayExceeded = 'No', 
+			Enabled = 'Yes', SkipOnError = 'No')
+			I_PCR_96_Green 'Unlidded' in 'Combi_Cart:Nest' GetMyOwnContainer;
+
+		Combi_Cart [Prime]
+			(Volume = '10', Fluid = 'Default Fluid', CassetteID = '0', 
+			ReserveForIteration = 'As Is', RunOnAbortedIteration = 'No', 
+			Duration = '00:00:02', MinDelay = '00:00:00', MaxDelaySpecified = 'No', 
+			RequestedMaxDelay = '00:00:00', SpoilIfMaxDelayExceeded = 'No', 
+			Enabled = 'Yes', SkipOnError = 'No')
+			I_PCR_96_Green 'Unlidded' in 'Combi_Cart:Nest' GetMyOwnContainer;
+
+		A_Combi_Shelf [Empty]
+			(Volume = '10', EmptyTime = '10', Fluid = 'Default Fluid', 
+			CassetteID = '0', ReserveForIteration = 'As Is', RunOnAbortedIteration = 'No', 
+			Duration = '00:00:02', MinDelay = '00:00:00', MaxDelaySpecified = 'No', 
+			RequestedMaxDelay = '00:00:00', SpoilIfMaxDelayExceeded = 'No', 
+			Enabled = 'Yes', SkipOnError = 'No')
+			I_PCR_96_Green in 'A_Combi_Shelf:Nest' GetMyOwnContainer;
+
+		MultiFlo [Load]
+			(ReserveForIteration = 'As Is', RunOnAbortedIteration = 'No', 
+			Duration = '00:00:01', MinDelay = '00:00:00', MaxDelaySpecified = 'No', 
+			RequestedMaxDelay = '00:00:00', SpoilIfMaxDelayExceeded = 'No', 
+			Enabled = 'Yes', SkipOnError = 'No')
+			I_PCR_96_Green 'Unlidded' in 'MultiFlo:Nest' GetMyOwnContainer;
+
+		MultiFlo [Incubate]
+			(ReserveForIteration = 'As Is', RunOnAbortedIteration = 'No', 
+			Duration = '00:00:01', MinDelay = '00:00:00', MaxDelaySpecified = 'No', 
+			RequestedMaxDelay = '00:00:00', SpoilIfMaxDelayExceeded = 'No', 
+			Enabled = 'Yes', SkipOnError = 'No')
+			I_PCR_96_Green 'Unlidded' in 'MultiFlo:Nest' GetMyOwnContainer;
+
+		MultiFlo [Run File Protocol]
+			(InputPath = '\\\\192.168.10.15\\c\\ProgramData\\BioTek\\Liquid Handling Control 2.22\\Protocols\\MultiFloFX', 
+			MaximumOperationTime = '00:20:00', ReserveForIteration = 'As Is', 
+			RunOnAbortedIteration = 'No', Duration = '00:00:01', 
+			MinDelay = '00:00:00', MaxDelaySpecified = 'No', RequestedMaxDelay = '00:00:00', 
+			SpoilIfMaxDelayExceeded = 'No', Enabled = 'Yes', SkipOnError = 'No')
+			I_PCR_96_Green 'Unlidded' in 'MultiFlo:Nest' GetMyOwnContainer;
+
+		MultiFlo [Run Onboard Protocol]
+			(MaximumOperationTime = '00:20:00', ReserveForIteration = 'As Is', 
+			RunOnAbortedIteration = 'No', Duration = '00:00:01', 
+			MinDelay = '00:00:00', MaxDelaySpecified = 'No', RequestedMaxDelay = '00:00:00', 
+			SpoilIfMaxDelayExceeded = 'No', Enabled = 'Yes', SkipOnError = 'No')
+			I_PCR_96_Green 'Unlidded' in 'MultiFlo:Nest' GetMyOwnContainer;
+
+		Presto [Load]
+			(ReserveForIteration = 'As Is', RunOnAbortedIteration = 'No', 
+			Duration = '00:00:01', MinDelay = '00:00:00', MaxDelaySpecified = 'No', 
+			RequestedMaxDelay = '00:00:00', SpoilIfMaxDelayExceeded = 'No', 
+			Enabled = 'Yes', SkipOnError = 'No')
+			I_PCR_96_Green in 'Presto:Nest 1' GetMyOwnContainer;
+
+		Presto [Incubate]
+			(ReserveForIteration = 'As Is', RunOnAbortedIteration = 'No', 
+			Duration = '00:00:01', MinDelay = '00:00:00', MaxDelaySpecified = 'No', 
+			RequestedMaxDelay = '00:00:00', SpoilIfMaxDelayExceeded = 'No', 
+			Enabled = 'Yes', SkipOnError = 'No')
+			I_PCR_96_Green in 'Presto:Nest 1' GetMyOwnContainer;
+
+		Presto [Run Protocol Step]
+			(MaximumOperationTime = '05:00:00', SkipOperation = 'No', 
+			ReserveForIteration = 'As Is', RunOnAbortedIteration = 'No', 
+			Duration = '00:00:01', MinDelay = '00:00:00', MaxDelaySpecified = 'No', 
+			RequestedMaxDelay = '00:00:00', SpoilIfMaxDelayExceeded = 'No', 
+			Enabled = 'Yes', SkipOnError = 'No')
+			I_PCR_96_Green in 'Presto:Nest 1' GetMyOwnContainer;
+
+		C_Shaker [Load]
+			(ReserveForIteration = 'As Is', RunOnAbortedIteration = 'No', 
+			Duration = '00:00:01', MinDelay = '00:00:00', MaxDelaySpecified = 'No', 
+			RequestedMaxDelay = '00:00:00', SpoilIfMaxDelayExceeded = 'No', 
+			Enabled = 'Yes', SkipOnError = 'No')
+			I_PCR_96_Green in 'C_Shaker:Nest' GetMyOwnContainer;
+
+		C_Shaker [Set Temperature]
+			(Temperature = '23', WaitTillComplete = 'No', Timeout = '00:05:00', 
+			IgnoreTimeoutError = 'No', ReserveForIteration = 'As Is', 
+			RunOnAbortedIteration = 'No', Duration = '00:00:04', 
+			MinDelay = '00:00:00', MaxDelaySpecified = 'No', RequestedMaxDelay = '00:00:00', 
+			SpoilIfMaxDelayExceeded = 'No', Enabled = 'Yes', SkipOnError = 'No')
+			I_PCR_96_Green in 'C_Shaker:Nest' GetMyOwnContainer;
+
+		C_Shaker [Incubate]
+			(ReserveForIteration = 'As Is', RunOnAbortedIteration = 'No', 
+			Duration = '00:00:01', MinDelay = '00:00:00', MaxDelaySpecified = 'No', 
+			RequestedMaxDelay = '00:00:00', SpoilIfMaxDelayExceeded = 'No', 
+			Enabled = 'Yes', SkipOnError = 'No')
+			I_PCR_96_Green in 'C_Shaker:Nest' GetMyOwnContainer;
+
+		C_Shaker [Shake]
+			(ShakeSpeed = '200', ShakeAccelDecel = '2', ShakeForever = 'No', 
+			ReserveForIteration = 'As Is', RunOnAbortedIteration = 'No', 
+			Duration = '00:01:00', MinDelay = '00:00:00', MaxDelaySpecified = 'No', 
+			RequestedMaxDelay = '00:00:00', SpoilIfMaxDelayExceeded = 'No', 
+			Enabled = 'Yes', SkipOnError = 'No')
+			I_PCR_96_Green in 'C_Shaker:Nest' GetMyOwnContainer;
+
+		Shaker_1_Cart [Load]
+			(ReserveForIteration = 'As Is', RunOnAbortedIteration = 'No', 
+			Duration = '00:00:01', MinDelay = '00:00:00', MaxDelaySpecified = 'No', 
+			RequestedMaxDelay = '00:00:00', SpoilIfMaxDelayExceeded = 'No', 
+			Enabled = 'Yes', SkipOnError = 'No')
+			I_PCR_96_Green in 'Shaker_1_Cart:Nest' GetMyOwnContainer;
+
+		Shaker_1_Cart [Incubate]
+			(ReserveForIteration = 'As Is', RunOnAbortedIteration = 'No', 
+			Duration = '00:00:01', MinDelay = '00:00:00', MaxDelaySpecified = 'No', 
+			RequestedMaxDelay = '00:00:00', SpoilIfMaxDelayExceeded = 'No', 
+			Enabled = 'Yes', SkipOnError = 'No')
+			I_PCR_96_Green in 'Shaker_1_Cart:Nest' GetMyOwnContainer;
+
+		Shaker_1_Cart [Set Temperature]
+			(Temperature = '23', WaitTillComplete = 'No', Timeout = '00:05:00', 
+			IgnoreTimeoutError = 'No', ReserveForIteration = 'As Is', 
+			RunOnAbortedIteration = 'No', Duration = '00:00:04', 
+			MinDelay = '00:00:00', MaxDelaySpecified = 'No', RequestedMaxDelay = '00:00:00', 
+			SpoilIfMaxDelayExceeded = 'No', Enabled = 'Yes', SkipOnError = 'No')
+			I_PCR_96_Green in 'Shaker_1_Cart:Nest' GetMyOwnContainer;
+
+		Shaker_1_Cart [Shake]
+			(ShakeSpeed = '200', ShakeAccelDecel = '2', ShakeForever = 'No', 
+			ReserveForIteration = 'As Is', RunOnAbortedIteration = 'No', 
+			Duration = '00:01:00', MinDelay = '00:00:00', MaxDelaySpecified = 'No', 
+			RequestedMaxDelay = '00:00:00', SpoilIfMaxDelayExceeded = 'No', 
+			Enabled = 'Yes', SkipOnError = 'No')
+			I_PCR_96_Green in 'Shaker_1_Cart:Nest' GetMyOwnContainer;
+
+		Shaker_2_Cart [Load]
+			(ReserveForIteration = 'As Is', RunOnAbortedIteration = 'No', 
+			Duration = '00:00:01', MinDelay = '00:00:00', MaxDelaySpecified = 'No', 
+			RequestedMaxDelay = '00:00:00', SpoilIfMaxDelayExceeded = 'No', 
+			Enabled = 'Yes', SkipOnError = 'No')
+			I_PCR_96_Green in 'Shaker_2_Cart:Nest' GetMyOwnContainer;
+
+		Shaker_2_Cart [Incubate]
+			(ReserveForIteration = 'As Is', RunOnAbortedIteration = 'No', 
+			Duration = '00:00:01', MinDelay = '00:00:00', MaxDelaySpecified = 'No', 
+			RequestedMaxDelay = '00:00:00', SpoilIfMaxDelayExceeded = 'No', 
+			Enabled = 'Yes', SkipOnError = 'No')
+			I_PCR_96_Green in 'Shaker_2_Cart:Nest' GetMyOwnContainer;
+
+		Shaker_2_Cart [Set Temperature]
+			(Temperature = '23', WaitTillComplete = 'No', Timeout = '00:05:00', 
+			IgnoreTimeoutError = 'No', ReserveForIteration = 'As Is', 
+			RunOnAbortedIteration = 'No', Duration = '00:00:04', 
+			MinDelay = '00:00:00', MaxDelaySpecified = 'No', RequestedMaxDelay = '00:00:00', 
+			SpoilIfMaxDelayExceeded = 'No', Enabled = 'Yes', SkipOnError = 'No')
+			I_PCR_96_Green in 'Shaker_2_Cart:Nest' GetMyOwnContainer;
+
+		Shaker_2_Cart [Shake]
+			(ShakeSpeed = '200', ShakeAccelDecel = '2', ShakeForever = 'No', 
+			ReserveForIteration = 'As Is', RunOnAbortedIteration = 'No', 
+			Duration = '00:01:00', MinDelay = '00:00:00', MaxDelaySpecified = 'No', 
+			RequestedMaxDelay = '00:00:00', SpoilIfMaxDelayExceeded = 'No', 
+			Enabled = 'Yes', SkipOnError = 'No')
+			I_PCR_96_Green in 'Shaker_2_Cart:Nest' GetMyOwnContainer;
+
+		AB_SwapStation [Load]
+			(ReserveForIteration = 'As Is', RunOnAbortedIteration = 'No', 
+			Duration = '00:00:01', MinDelay = '00:00:00', MaxDelaySpecified = 'No', 
+			RequestedMaxDelay = '00:00:00', SpoilIfMaxDelayExceeded = 'No', 
+			Enabled = 'Yes', SkipOnError = 'No')
+			I_PCR_96_Green in 'AB_SwapStation:Nest' GetMyOwnContainer;
+
+		BC_SwapStation [Load]
+			(ReserveForIteration = 'As Is', RunOnAbortedIteration = 'No', 
+			Duration = '00:00:01', MinDelay = '00:00:00', MaxDelaySpecified = 'No', 
+			RequestedMaxDelay = '00:00:00', SpoilIfMaxDelayExceeded = 'No', 
+			Enabled = 'Yes', SkipOnError = 'No')
+			I_PCR_96_Green in 'BC_SwapStation:Nest' GetMyOwnContainer;
+
+		B_XPeel [Load]
+			(ReserveForIteration = 'As Is', RunOnAbortedIteration = 'No', 
+			Duration = '00:00:01', MinDelay = '00:00:00', MaxDelaySpecified = 'No', 
+			RequestedMaxDelay = '00:00:00', SpoilIfMaxDelayExceeded = 'No', 
+			Enabled = 'Yes', SkipOnError = 'No')
+			I_PCR_96_Green 'Unlidded' in 'B_XPeel:Nest' GetMyOwnContainer;
+
+		B_XPeel [Incubate]
+			(ReserveForIteration = 'As Is', RunOnAbortedIteration = 'No', 
+			Duration = '00:00:01', MinDelay = '00:00:00', MaxDelaySpecified = 'No', 
+			RequestedMaxDelay = '00:00:00', SpoilIfMaxDelayExceeded = 'No', 
+			Enabled = 'Yes', SkipOnError = 'No')
+			I_PCR_96_Green 'Unlidded' in 'B_XPeel:Nest' GetMyOwnContainer;
+
+		B_XPeel [Remove Seal]
+			(ParameterSet = 'Set 4 - Location: default, Speed: slow', 
+			AdhereTime = '2.5', PeelTimeOut = '00:00:35', ReserveForIteration = 'As Is', 
+			RunOnAbortedIteration = 'No', Duration = '00:00:01', 
+			MinDelay = '00:00:00', MaxDelaySpecified = 'No', RequestedMaxDelay = '00:00:00', 
+			SpoilIfMaxDelayExceeded = 'No', Enabled = 'Yes', SkipOnError = 'No')
+			I_PCR_96_Green 'Unlidded' in 'B_XPeel:Nest' GetMyOwnContainer;
+
+		C_XPeel [Load]
+			(ReserveForIteration = 'As Is', RunOnAbortedIteration = 'No', 
+			Duration = '00:00:01', MinDelay = '00:00:00', MaxDelaySpecified = 'No', 
+			RequestedMaxDelay = '00:00:00', SpoilIfMaxDelayExceeded = 'No', 
+			Enabled = 'Yes', SkipOnError = 'No')
+			I_PCR_96_Green 'Unlidded' in 'C_XPeel:Nest' GetMyOwnContainer;
+
+		C_XPeel [Incubate]
+			(ReserveForIteration = 'As Is', RunOnAbortedIteration = 'No', 
+			Duration = '00:00:01', MinDelay = '00:00:00', MaxDelaySpecified = 'No', 
+			RequestedMaxDelay = '00:00:00', SpoilIfMaxDelayExceeded = 'No', 
+			Enabled = 'Yes', SkipOnError = 'No')
+			I_PCR_96_Green 'Unlidded' in 'C_XPeel:Nest' GetMyOwnContainer;
+
+		C_XPeel [Remove Seal]
+			(ParameterSet = 'Set 4 - Location: default, Speed: slow', 
+			AdhereTime = '2.5', PeelTimeOut = '00:00:35', ReserveForIteration = 'As Is', 
+			RunOnAbortedIteration = 'No', Duration = '00:00:01', 
+			MinDelay = '00:00:00', MaxDelaySpecified = 'No', RequestedMaxDelay = '00:00:00', 
+			SpoilIfMaxDelayExceeded = 'No', Enabled = 'Yes', SkipOnError = 'No')
+			I_PCR_96_Green 'Unlidded' in 'C_XPeel:Nest' GetMyOwnContainer;
+	}
+}

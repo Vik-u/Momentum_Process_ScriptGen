@@ -1,0 +1,39 @@
+{
+  "ATC96_Pool": {
+    "type": "OperationPool",
+    "members": [
+      "A_ATC96_1",
+      "A_ATC96_2"
+    ]
+  },
+  "A_Hotel_Pool": {
+    "type": "StoragePool",
+    "members": [
+      "A_Hotel_1",
+      "A_Hotel_2",
+      "A_Hotel_3",
+      "A_Hotel_4"
+    ]
+  },
+  "B_Hotel_Pool": {
+    "type": "StoragePool",
+    "members": [
+      "B_Hotel_1",
+      "B_Hotel_2"
+    ]
+  },
+  "C_Hotel_Pool": {
+    "type": "StoragePool",
+    "members": [
+      "C_Hotel_1",
+      "C_Hotel_2"
+    ]
+  },
+  "Cart_Shakers": {
+    "type": "OperationPool",
+    "members": [
+      "Shaker_1_Cart",
+      "Shaker_2_Cart"
+    ]
+  }
+}

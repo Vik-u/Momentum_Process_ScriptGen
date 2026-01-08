@@ -1,0 +1,297 @@
+// Generated: 2026-01-05T22:59:41.2365038Z
+profile [My System]
+{
+	// Devices and settings
+	devices
+	{
+		SwapStation AB_SwapStation
+			(Active = 'Active', TakeOfflineDuringChangeout = 'Yes');
+		ATC A_ATC384
+			(Active = 'Active', TakeOfflineDuringChangeout = 'Yes');
+		ATC A_ATC96_1
+			(Active = 'Active', TakeOfflineDuringChangeout = 'Yes');
+		ATC A_ATC96_2
+			(Active = 'Active', TakeOfflineDuringChangeout = 'Yes');
+		MultidropCombi A_Combi_Shelf
+			(ValvePortsUI = '8', InitFluid = 'Valve 1', ShowFavouriteFluids = 'No', 
+			PrimeWhenIdle = 'No', PrimeOnInitialization = 'Yes', 
+			PrimeVolumeWhenIdle = '10', PrimeIntervalWhenIdle = '5', 
+			CassetteID = '1', ChangeCassetteAtRuntime = 'No', Active = 'Active', 
+			TakeOfflineDuringChangeout = 'Yes');
+		Wtio A_Combi_Shelf_Valve
+			(Active = 'Active', TakeOfflineDuringChangeout = 'Yes');
+		Cytomat2C4 A_Cytomat2C
+			(CO2Deadband = '2', CO2Enable = 'No', CO2HiHiLimit = '55', 
+			CO2HiLimit = '50', CO2LoLimit = '40', CO2LoLoLimit = '35', 
+			HumidityDeadband = '2', HumidityEnable = 'No', HumidityHiHiLimit = '75', 
+			HumidityHiLimit = '70', HumidityLoLimit = '30', HumidityLoLoLimit = '25', 
+			O2Deadband = '2', O2Enable = 'No', O2HiHiLimit = '75', 
+			O2HiLimit = '70', O2LoLimit = '60', O2LoLoLimit = '55', 
+			TemperatureDeadband = '2', TemperatureEnable = 'No', 
+			TemperatureHiHiLimit = '45', TemperatureHiLimit = '39', 
+			TemperatureLoLimit = '35', TemperatureLoLoLimit = '30', 
+			ShakeDuringIncubate = 'Yes', ShakeWhenInitialized = 'No', 
+			StopShakingWhenOffline = 'No', RPMT1 = '100', RPMT2 = '100', 
+			ShakingFrequency = '12', ShakingAmplitude = '50', ScanBarcodeOnGet = 'No', 
+			Use20CharBarcode = 'No', SubstituteGetPutWithTransfer = 'No', 
+			ManagedTransferStation = 'No', FAMModeEnabled = 'No', 
+			SearchMode = 'Entire Device', HotelsOccupancyLabel = '<Click to Edit ...>', 
+			ContainersParticipationLabel = '<Click to Edit ...>', 
+			IncubateTimeout = '00:00:00', IncubateTimeoutHeatOff = 'No', 
+			LowerElevatorAfterAccess = 'No', Active = 'Active', 
+			TakeOfflineDuringChangeout = 'Yes');
+		Hotel A_Hotel_1
+			(Active = 'Active', TakeOfflineDuringChangeout = 'Yes');
+		Hotel A_Hotel_2
+			(Active = 'Active', TakeOfflineDuringChangeout = 'Yes');
+		Hotel A_Hotel_3
+			(Active = 'Inactive', TakeOfflineDuringChangeout = 'Yes');
+		Hotel A_Hotel_4
+			(Active = 'Inactive', TakeOfflineDuringChangeout = 'Yes');
+		SciPrintMP2 A_Labeler
+			(PlateMoveTo = 'Sample Plate', CleanLabelList = 'Sample Label', 
+			AvailPlateList = 'Sample Plate', Active = 'Active', 
+			TakeOfflineDuringChangeout = 'Yes');
+		QuantStudio7Pro A_PCR
+			(Active = 'Active', TakeOfflineDuringChangeout = 'Yes');
+		GenericMover A_SpinnakerXT
+			(ParkLocation = 'STDloc:safe', ParkMoverAtEndOfRun = 'No', 
+			MotionSettings = 'Velocity: 90%, Acceleration: 90%, Jerk: 100%', 
+			AllowLidding = 'Yes', AttendedActionForNoCode = 'Prompt', 
+			UnattendedActionForNoCode = 'Warning', Active = 'Active', 
+			TakeOfflineDuringChangeout = 'No');
+		Waste A_Waste
+			(Active = 'Active', TakeOfflineDuringChangeout = 'Yes');
+		ApplicationLauncherUtility ApplicationLauncher
+			(Active = 'Active', TakeOfflineDuringChangeout = 'Yes');
+		SwapStation BC_SwapStation
+			(Active = 'Active', TakeOfflineDuringChangeout = 'Yes');
+		ALPS5000 B_ALPS_Sealer
+			(PreHeatingTemperature = '165', SealTime = '2', SealLength = '120', 
+			SetpointMode = 'Distance', SealDistance = '30', SealForce = '8', 
+			Active = 'Active', TakeOfflineDuringChangeout = 'Yes');
+		HiG3Centrifuge B_Centrifuge
+			(CounterWeight = 'Bucket 2', SwitchBucketAfterAccess = 'No', 
+			SwitchBucketContextual = 'Yes', Active = 'Active', 
+			TakeOfflineDuringChangeout = 'Yes');
+		Cytomat10 B_Cytomat10C
+			(CO2Deadband = '2', CO2Enable = 'No', CO2HiHiLimit = '55', 
+			CO2HiLimit = '50', CO2LoLimit = '40', CO2LoLoLimit = '35', 
+			HumidityDeadband = '2', HumidityEnable = 'No', HumidityHiHiLimit = '75', 
+			HumidityHiLimit = '70', HumidityLoLimit = '30', HumidityLoLoLimit = '25', 
+			O2Deadband = '2', O2Enable = 'No', O2HiHiLimit = '75', 
+			O2HiLimit = '70', O2LoLimit = '60', O2LoLoLimit = '55', 
+			TemperatureDeadband = '2', TemperatureEnable = 'No', 
+			TemperatureHiHiLimit = '45', TemperatureHiLimit = '39', 
+			TemperatureLoLimit = '35', TemperatureLoLoLimit = '30', 
+			ShakeDuringIncubate = 'No', ShakeWhenInitialized = 'No', 
+			StopShakingWhenOffline = 'No', RPMT1 = '100', RPMT2 = '100', 
+			ShakingFrequency = '12', ShakingAmplitude = '50', ScanBarcodeOnGet = 'No', 
+			Use20CharBarcode = 'No', SubstituteGetPutWithTransfer = 'No', 
+			ManagedTransferStation = 'No', FAMModeEnabled = 'No', 
+			SearchMode = 'Entire Device', HotelsOccupancyLabel = '<Click to Edit ...>', 
+			ContainersParticipationLabel = '<Click to Edit ...>', 
+			IncubateTimeout = '00:00:00', IncubateTimeoutHeatOff = 'No', 
+			LowerElevatorAfterAccess = 'No', Active = 'Active', 
+			TakeOfflineDuringChangeout = 'Yes');
+		Cytomat2C4 B_Cytomat2C
+			(CO2Deadband = '2', CO2Enable = 'No', CO2HiHiLimit = '55', 
+			CO2HiLimit = '50', CO2LoLimit = '40', CO2LoLoLimit = '35', 
+			HumidityDeadband = '2', HumidityEnable = 'No', HumidityHiHiLimit = '75', 
+			HumidityHiLimit = '70', HumidityLoLimit = '30', HumidityLoLoLimit = '25', 
+			O2Deadband = '2', O2Enable = 'No', O2HiHiLimit = '75', 
+			O2HiLimit = '70', O2LoLimit = '60', O2LoLoLimit = '55', 
+			TemperatureDeadband = '2', TemperatureEnable = 'No', 
+			TemperatureHiHiLimit = '45', TemperatureHiLimit = '39', 
+			TemperatureLoLimit = '35', TemperatureLoLoLimit = '30', 
+			ShakeDuringIncubate = 'Yes', ShakeWhenInitialized = 'Yes', 
+			StopShakingWhenOffline = 'No', RPMT1 = '1200', RPMT2 = '1200', 
+			ShakingFrequency = '12', ShakingAmplitude = '50', ScanBarcodeOnGet = 'No', 
+			Use20CharBarcode = 'No', SubstituteGetPutWithTransfer = 'No', 
+			ManagedTransferStation = 'No', FAMModeEnabled = 'No', 
+			SearchMode = 'Entire Device', HotelsOccupancyLabel = '<Click to Edit ...>', 
+			ContainersParticipationLabel = '<Click to Edit ...>', 
+			IncubateTimeout = '00:00:00', IncubateTimeoutHeatOff = 'No', 
+			LowerElevatorAfterAccess = 'No', Active = 'Active', 
+			TakeOfflineDuringChangeout = 'Yes');
+		Fluent B_Fluent
+			(HandleLabwareInTransfer = 'No', Active = 'Active', 
+			TakeOfflineDuringChangeout = 'Yes');
+		RotationStation B_Fluent_RotationStation
+			(Active = 'Active', TakeOfflineDuringChangeout = 'Yes');
+		Hotel B_Hotel_1
+			(Active = 'Active', TakeOfflineDuringChangeout = 'Yes');
+		Hotel B_Hotel_2
+			(Active = 'Active', TakeOfflineDuringChangeout = 'Yes');
+		SkyLine B_SkyLine
+			(ScanBarcodeOnGet = 'Yes', ContainerProfilePath = 'C:\\Users\\Public\\Documents\\Thermo Scientific\\Momentum\\SkyLineContainerProfiles', 
+			Active = 'Active', TakeOfflineDuringChangeout = 'Yes');
+		Spark B_Spark_Reader
+			(ProtocolPathListUI = '<Click Button to Edit>', KeepDoorOpenBetweenRead = 'Yes', 
+			Active = 'Active', TakeOfflineDuringChangeout = 'Yes');
+		GenericMover B_SpinnakerBT
+			(ParkLocation = 'STDloc:safe', ParkMoverAtEndOfRun = 'No', 
+			MotionSettings = 'Velocity: 90%, Acceleration: 90%, Jerk: 100%', 
+			AllowLidding = 'Yes', AttendedActionForNoCode = 'Prompt', 
+			UnattendedActionForNoCode = 'Warning', Active = 'Active', 
+			TakeOfflineDuringChangeout = 'No');
+		GenericNest B_Transfer_Nest
+			(Active = 'Active', TakeOfflineDuringChangeout = 'Yes');
+		XPeel B_XPeel
+			(ElevateWarningsToErrors = 'No', IgnoreSealNotRemovedErrors = 'No', 
+			EnablePlatePresenceCheck = 'No', GetRemainingSealsOnStartup = 'No', 
+			Active = 'Active', TakeOfflineDuringChangeout = 'Yes');
+		a4S B_a4S_Sealer
+			(SealingTemperature = '170', SealingTime = '2', SealHeight = '0', 
+			TemperatureOffset = '0', HeaterOn = 'Yes', Active = 'Active', 
+			TakeOfflineDuringChangeout = 'Yes');
+		Echo6XX C_Echo
+			(LeaveBubblerPumpRunning = 'True', SkipPlatePropertyValidation = 'False', 
+			SetBarcodeCheck = 'No', ScanBarcodeUsingEcho = 'No', 
+			KeepDoorOpen = 'No', Active = 'Active', TakeOfflineDuringChangeout = 'Yes');
+		EchoMS C_EchoMS
+			(InstrumentName = 'Echo® MS+ system', Active = 'Active', 
+			TakeOfflineDuringChangeout = 'Yes');
+		Hotel C_Hotel_1
+			(Active = 'Active', TakeOfflineDuringChangeout = 'Yes');
+		Hotel C_Hotel_2
+			(Active = 'Active', TakeOfflineDuringChangeout = 'Yes');
+		Hotel C_Hotel_Temp
+			(Active = 'Active', TakeOfflineDuringChangeout = 'Yes');
+		Lidpark C_LidPark
+			(RegripBeforeLidDelid = 'Yes', DelidToStorageNests = 'No', 
+			LidFromStorageNests = 'No', Active = 'Active', TakeOfflineDuringChangeout = 'Yes');
+		Wtio C_LidPark_IO
+			(Active = 'Active', TakeOfflineDuringChangeout = 'Yes');
+		PIXL C_PIXL
+			(RunOnLowPickupLine = 'No', PickupLineInMeters = '187.15812683105469', 
+			Active = 'Active', TakeOfflineDuringChangeout = 'Yes');
+		SingleNest3000Series C_Shaker
+			(ProfileTemperature = '23', ProfileWaitTillComplete = 'No', 
+			ProfileTimeout = '00:05:00', ProfileIgnoreTimeoutError = 'No', 
+			Active = 'Active', TakeOfflineDuringChangeout = 'Yes');
+		GenericMover C_SpinnakerBT
+			(ParkLocation = 'STDloc:safe', ParkMoverAtEndOfRun = 'No', 
+			MotionSettings = 'Velocity: 90%, Acceleration: 90%, Jerk: 100%', 
+			AllowLidding = 'No', AttendedActionForNoCode = 'Prompt', 
+			UnattendedActionForNoCode = 'Warning', Active = 'Active', 
+			TakeOfflineDuringChangeout = 'No');
+		XPeel C_XPeel
+			(ElevateWarningsToErrors = 'No', IgnoreSealNotRemovedErrors = 'No', 
+			EnablePlatePresenceCheck = 'No', GetRemainingSealsOnStartup = 'No', 
+			Active = 'Active', TakeOfflineDuringChangeout = 'Yes');
+		MultidropCombi Combi_Cart
+			(ValvePortsUI = '8', InitFluid = 'Valve 1', ShowFavouriteFluids = 'No', 
+			PrimeWhenIdle = 'No', PrimeOnInitialization = 'Yes', 
+			PrimeVolumeWhenIdle = '10', PrimeIntervalWhenIdle = '5', 
+			CassetteID = '1', ChangeCassetteAtRuntime = 'No', Active = 'Active', 
+			TakeOfflineDuringChangeout = 'Yes');
+		Wtio Combi_Cart_Valve
+			(Active = 'Active', TakeOfflineDuringChangeout = 'Yes');
+		ContainerScanner ContainerScanner
+			(Active = 'Active', TakeOfflineDuringChangeout = 'Yes');
+		DataBuilder DataBuilder
+			(Active = 'Active', TakeOfflineDuringChangeout = 'Yes');
+		DataMiner DataMiner
+			(Active = 'Active', TakeOfflineDuringChangeout = 'Yes');
+		Docking Docking
+			(Active = 'Active', TakeOfflineDuringChangeout = 'Yes');
+		FileManager FileManager
+			(Active = 'Active', TakeOfflineDuringChangeout = 'Yes');
+		Infinity Fragment_Analyzer
+			(CapillarySize = '33 cm', Active = 'Active', TakeOfflineDuringChangeout = 'Yes');
+		Wtio GPIO_1
+			(Active = 'Active', TakeOfflineDuringChangeout = 'Yes');
+		Wtio GPIO_2
+			(Active = 'Active', TakeOfflineDuringChangeout = 'Yes');
+		Lunatic Lunatic_Reader
+			(experimentLocation = 'C:\\temp\\', resultDefinitionLocation = 'C:\\temp\\', 
+			plateLayoutLocation = 'C:\\temp\\', Active = 'Active', 
+			TakeOfflineDuringChangeout = 'Yes');
+		MomentumOperator MomentumOperator
+			(Active = 'Active', TakeOfflineDuringChangeout = 'Yes');
+		MultiFlo MultiFlo
+			(DoPrepare = 'No', Active = 'Active', TakeOfflineDuringChangeout = 'Yes');
+		KingfisherPresto Presto
+			(Active = 'Active', TakeOfflineDuringChangeout = 'Yes');
+		Hotel Presto_Hotel
+			(Active = 'Active', TakeOfflineDuringChangeout = 'Yes');
+		SingleNest3000Series Shaker_1_Cart
+			(ProfileTemperature = '23', ProfileWaitTillComplete = 'No', 
+			ProfileTimeout = '00:05:00', ProfileIgnoreTimeoutError = 'No', 
+			Active = 'Active', TakeOfflineDuringChangeout = 'Yes');
+		SingleNest3000Series Shaker_2_Cart
+			(ProfileTemperature = '23', ProfileWaitTillComplete = 'No', 
+			ProfileTimeout = '00:05:00', ProfileIgnoreTimeoutError = 'No', 
+			Active = 'Active', TakeOfflineDuringChangeout = 'Yes');
+	}
+
+	// Device Pools
+	pools
+	{
+		StoragePool A_Hotel_Pool
+			(Strategy = 'Priority First Available', ResetOnNewWorkUnit = 'Yes', 
+			SkipError = 'No', SkipOffline = 'No', OfflineSkipDuration = '00:00:00', 
+			SkipUndocked = 'No', UndockedSkipDuration = '00:00:00') A_Hotel_1,A_Hotel_2,A_Hotel_3,A_Hotel_4 ;
+		OperationPool ATC96_Pool
+			(Strategy = 'Priority First Available', SkipError = 'No', 
+			SkipOffline = 'No', OfflineSkipDuration = '00:00:00', 
+			SkipUndocked = 'No', UndockedSkipDuration = '00:00:00') A_ATC96_1,A_ATC96_2 ;
+		StoragePool B_Hotel_Pool
+			(Strategy = 'Priority First Available', ResetOnNewWorkUnit = 'Yes', 
+			SkipError = 'No', SkipOffline = 'No', OfflineSkipDuration = '00:00:00', 
+			SkipUndocked = 'No', UndockedSkipDuration = '00:00:00') B_Hotel_1,B_Hotel_2 ;
+		StoragePool C_Hotel_Pool
+			(Strategy = 'Priority First Available', ResetOnNewWorkUnit = 'Yes', 
+			SkipError = 'No', SkipOffline = 'No', OfflineSkipDuration = '00:00:00', 
+			SkipUndocked = 'No', UndockedSkipDuration = '00:00:00') C_Hotel_1,C_Hotel_2 ;
+		OperationPool Cart_Shakers
+			(Strategy = 'Priority First Available', SkipError = 'No', 
+			SkipOffline = 'No', OfflineSkipDuration = '00:00:00', 
+			SkipUndocked = 'No', UndockedSkipDuration = '00:00:00') Shaker_1_Cart,Shaker_2_Cart ;
+	}
+
+	// Profile variables
+	variables
+	{
+		String EchoControlsPicklistFile
+			(PromptForValue = 'No', Persist = 'No', Shared = 'Iteration', 
+			Capacity = '1');
+		String EchoPicklistFile
+			(PromptForValue = 'No', Persist = 'No', Shared = 'Iteration', 
+			Capacity = '1');
+		String EchoProtocolFile
+			(PromptForValue = 'No', Persist = 'No', Shared = 'Iteration', 
+			Capacity = '1');
+		String Global_NextLocation
+			(PromptForValue = 'No', Persist = 'No', Shared = 'Iteration', 
+			Capacity = '1');
+		Integer Global_NumOfDetectedColonies
+			(DefaultValue = '0', PromptForValue = 'No', Persist = 'No', 
+			Shared = 'Iteration', Capacity = '1');
+		Boolean Lock_EchoProtocol
+			(DefaultValue = 'No', PromptForValue = 'No', Persist = 'No', 
+			Shared = 'Iteration', Capacity = '1');
+		Boolean Lock_PreEcho_Ops
+			(DefaultValue = 'No', PromptForValue = 'No', Persist = 'No', 
+			Shared = 'Iteration', Capacity = '1');
+		Integer NumProtocolStepsProfile
+			(DefaultValue = '0', PromptForValue = 'No', Persist = 'No', 
+			Shared = 'Iteration', Capacity = '1');
+	}
+
+	// ******************  Version 1  ******************
+	// User: Admin  Date: 2026-01-05T16:59:38.4907620-06:00
+	process [Demo_PCR]
+	{
+		// Process steps
+		A_PCR [Load]
+			(ReserveForIteration = 'As Is', RunOnAbortedIteration = 'No', Duration = '00:00:01', MinDelay = '00:00:00', MaxDelaySpecified = 'No', RequestedMaxDelay = '00:00:00', SpoilIfMaxDelayExceeded = 'No', Enabled = 'Yes', SkipOnError = 'No')
+			I_PCR_96_Blue 'Unlidded' in 'A_PCR:Nest' GetMyOwnContainer;
+
+		A_PCR [Incubate]
+			(ReserveForIteration = 'As Is', RunOnAbortedIteration = 'No', Duration = '00:00:01', MinDelay = '00:00:00', MaxDelaySpecified = 'No', RequestedMaxDelay = '00:00:00', SpoilIfMaxDelayExceeded = 'No', Enabled = 'Yes', SkipOnError = 'No')
+			I_PCR_96_Blue 'Unlidded' in 'A_PCR:Nest' GetMyOwnContainer;
+
+	}
+}

@@ -1,0 +1,432 @@
+{
+  "C_Shaker": {
+    "Incubate": {
+      "parameters": [
+        "ReserveForIteration",
+        "RunOnAbortedIteration",
+        "Duration",
+        "MinDelay",
+        "MaxDelaySpecified",
+        "RequestedMaxDelay",
+        "SpoilIfMaxDelayExceeded",
+        "Enabled",
+        "SkipOnError"
+      ],
+      "containers": [
+        {
+          "container": "I_PCR_96_Green",
+          "lid_state": null,
+          "location": "C_Shaker:Nest"
+        }
+      ],
+      "parameters_meta": {
+        "Duration": {
+          "type": "time",
+          "default": "00:00:01",
+          "observed_values": [
+            "00:00:01"
+          ],
+          "min": "00:00:01",
+          "max": "00:00:01"
+        },
+        "Enabled": {
+          "type": "boolean",
+          "default": "Yes",
+          "observed_values": [
+            "Yes"
+          ]
+        },
+        "MaxDelaySpecified": {
+          "type": "boolean",
+          "default": "No",
+          "observed_values": [
+            "No"
+          ]
+        },
+        "MinDelay": {
+          "type": "time",
+          "default": "00:00:00",
+          "observed_values": [
+            "00:00:00"
+          ],
+          "min": "00:00:00",
+          "max": "00:00:00"
+        },
+        "RequestedMaxDelay": {
+          "type": "time",
+          "default": "00:00:00",
+          "observed_values": [
+            "00:00:00"
+          ],
+          "min": "00:00:00",
+          "max": "00:00:00"
+        },
+        "ReserveForIteration": {
+          "type": "string",
+          "default": "As Is",
+          "observed_values": [
+            "As Is"
+          ]
+        },
+        "RunOnAbortedIteration": {
+          "type": "boolean",
+          "default": "No",
+          "observed_values": [
+            "No"
+          ]
+        },
+        "SkipOnError": {
+          "type": "boolean",
+          "default": "No",
+          "observed_values": [
+            "No"
+          ]
+        },
+        "SpoilIfMaxDelayExceeded": {
+          "type": "boolean",
+          "default": "No",
+          "observed_values": [
+            "No"
+          ]
+        }
+      }
+    },
+    "Load": {
+      "parameters": [
+        "ReserveForIteration",
+        "RunOnAbortedIteration",
+        "Duration",
+        "MinDelay",
+        "MaxDelaySpecified",
+        "RequestedMaxDelay",
+        "SpoilIfMaxDelayExceeded",
+        "Enabled",
+        "SkipOnError"
+      ],
+      "containers": [
+        {
+          "container": "I_PCR_96_Green",
+          "lid_state": null,
+          "location": "C_Shaker:Nest"
+        }
+      ],
+      "parameters_meta": {
+        "Duration": {
+          "type": "time",
+          "default": "00:00:01",
+          "observed_values": [
+            "00:00:01"
+          ],
+          "min": "00:00:01",
+          "max": "00:00:01"
+        },
+        "Enabled": {
+          "type": "boolean",
+          "default": "Yes",
+          "observed_values": [
+            "Yes"
+          ]
+        },
+        "MaxDelaySpecified": {
+          "type": "boolean",
+          "default": "No",
+          "observed_values": [
+            "No"
+          ]
+        },
+        "MinDelay": {
+          "type": "time",
+          "default": "00:00:00",
+          "observed_values": [
+            "00:00:00"
+          ],
+          "min": "00:00:00",
+          "max": "00:00:00"
+        },
+        "RequestedMaxDelay": {
+          "type": "time",
+          "default": "00:00:00",
+          "observed_values": [
+            "00:00:00"
+          ],
+          "min": "00:00:00",
+          "max": "00:00:00"
+        },
+        "ReserveForIteration": {
+          "type": "string",
+          "default": "As Is",
+          "observed_values": [
+            "As Is"
+          ]
+        },
+        "RunOnAbortedIteration": {
+          "type": "boolean",
+          "default": "No",
+          "observed_values": [
+            "No"
+          ]
+        },
+        "SkipOnError": {
+          "type": "boolean",
+          "default": "No",
+          "observed_values": [
+            "No"
+          ]
+        },
+        "SpoilIfMaxDelayExceeded": {
+          "type": "boolean",
+          "default": "No",
+          "observed_values": [
+            "No"
+          ]
+        }
+      }
+    },
+    "Set Temperature": {
+      "parameters": [
+        "Temperature",
+        "WaitTillComplete",
+        "Timeout",
+        "IgnoreTimeoutError",
+        "ReserveForIteration",
+        "RunOnAbortedIteration",
+        "Duration",
+        "MinDelay",
+        "MaxDelaySpecified",
+        "RequestedMaxDelay",
+        "SpoilIfMaxDelayExceeded",
+        "Enabled",
+        "SkipOnError"
+      ],
+      "containers": [
+        {
+          "container": "I_PCR_96_Green",
+          "lid_state": null,
+          "location": "C_Shaker:Nest"
+        }
+      ],
+      "parameters_meta": {
+        "Duration": {
+          "type": "time",
+          "default": "00:00:04",
+          "observed_values": [
+            "00:00:04"
+          ],
+          "min": "00:00:04",
+          "max": "00:00:04"
+        },
+        "Enabled": {
+          "type": "boolean",
+          "default": "Yes",
+          "observed_values": [
+            "Yes"
+          ]
+        },
+        "IgnoreTimeoutError": {
+          "type": "boolean",
+          "default": "No",
+          "observed_values": [
+            "No"
+          ]
+        },
+        "MaxDelaySpecified": {
+          "type": "boolean",
+          "default": "No",
+          "observed_values": [
+            "No"
+          ]
+        },
+        "MinDelay": {
+          "type": "time",
+          "default": "00:00:00",
+          "observed_values": [
+            "00:00:00"
+          ],
+          "min": "00:00:00",
+          "max": "00:00:00"
+        },
+        "RequestedMaxDelay": {
+          "type": "time",
+          "default": "00:00:00",
+          "observed_values": [
+            "00:00:00"
+          ],
+          "min": "00:00:00",
+          "max": "00:00:00"
+        },
+        "ReserveForIteration": {
+          "type": "string",
+          "default": "As Is",
+          "observed_values": [
+            "As Is"
+          ]
+        },
+        "RunOnAbortedIteration": {
+          "type": "boolean",
+          "default": "No",
+          "observed_values": [
+            "No"
+          ]
+        },
+        "SkipOnError": {
+          "type": "boolean",
+          "default": "No",
+          "observed_values": [
+            "No"
+          ]
+        },
+        "SpoilIfMaxDelayExceeded": {
+          "type": "boolean",
+          "default": "No",
+          "observed_values": [
+            "No"
+          ]
+        },
+        "Temperature": {
+          "type": "number",
+          "default": "23",
+          "observed_values": [
+            "23"
+          ],
+          "min": "23",
+          "max": "23"
+        },
+        "Timeout": {
+          "type": "time",
+          "default": "00:05:00",
+          "observed_values": [
+            "00:05:00"
+          ],
+          "min": "00:05:00",
+          "max": "00:05:00"
+        },
+        "WaitTillComplete": {
+          "type": "boolean",
+          "default": "No",
+          "observed_values": [
+            "No"
+          ]
+        }
+      }
+    },
+    "Shake": {
+      "parameters": [
+        "ShakeSpeed",
+        "ShakeAccelDecel",
+        "ShakeForever",
+        "ReserveForIteration",
+        "RunOnAbortedIteration",
+        "Duration",
+        "MinDelay",
+        "MaxDelaySpecified",
+        "RequestedMaxDelay",
+        "SpoilIfMaxDelayExceeded",
+        "Enabled",
+        "SkipOnError"
+      ],
+      "containers": [
+        {
+          "container": "I_PCR_96_Green",
+          "lid_state": null,
+          "location": "C_Shaker:Nest"
+        }
+      ],
+      "parameters_meta": {
+        "Duration": {
+          "type": "time",
+          "default": "00:01:00",
+          "observed_values": [
+            "00:01:00"
+          ],
+          "min": "00:01:00",
+          "max": "00:01:00"
+        },
+        "Enabled": {
+          "type": "boolean",
+          "default": "Yes",
+          "observed_values": [
+            "Yes"
+          ]
+        },
+        "MaxDelaySpecified": {
+          "type": "boolean",
+          "default": "No",
+          "observed_values": [
+            "No"
+          ]
+        },
+        "MinDelay": {
+          "type": "time",
+          "default": "00:00:00",
+          "observed_values": [
+            "00:00:00"
+          ],
+          "min": "00:00:00",
+          "max": "00:00:00"
+        },
+        "RequestedMaxDelay": {
+          "type": "time",
+          "default": "00:00:00",
+          "observed_values": [
+            "00:00:00"
+          ],
+          "min": "00:00:00",
+          "max": "00:00:00"
+        },
+        "ReserveForIteration": {
+          "type": "string",
+          "default": "As Is",
+          "observed_values": [
+            "As Is"
+          ]
+        },
+        "RunOnAbortedIteration": {
+          "type": "boolean",
+          "default": "No",
+          "observed_values": [
+            "No"
+          ]
+        },
+        "ShakeAccelDecel": {
+          "type": "number",
+          "default": "2",
+          "observed_values": [
+            "2"
+          ],
+          "min": "2",
+          "max": "2"
+        },
+        "ShakeForever": {
+          "type": "boolean",
+          "default": "No",
+          "observed_values": [
+            "No"
+          ]
+        },
+        "ShakeSpeed": {
+          "type": "number",
+          "default": "200",
+          "observed_values": [
+            "200"
+          ],
+          "min": "200",
+          "max": "200"
+        },
+        "SkipOnError": {
+          "type": "boolean",
+          "default": "No",
+          "observed_values": [
+            "No"
+          ]
+        },
+        "SpoilIfMaxDelayExceeded": {
+          "type": "boolean",
+          "default": "No",
+          "observed_values": [
+            "No"
+          ]
+        }
+      }
+    }
+  }
+}
